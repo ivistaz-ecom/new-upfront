@@ -45,8 +45,8 @@ const Header = () => {
   return (
     <div className="sticky top-0 z-50">
       <nav
-        className={`absolute top-0 left-0 z-40 w-full ${
-          isScrolled ? "bg-[#222222]" : "bg-transparent"
+        className={` top-0 left-0 z-40 w-full ${
+          isScrolled ? "bg-[#222222]" : "bg-[#222222]"
         }`}
       >
         <div
@@ -60,8 +60,8 @@ const Header = () => {
           >
             <Image
               src="/homePage/upfrontLogo.svg"
-              width={isScrolled ? 70 : 109}
-              height={isScrolled ? 70 : 103}
+              width={80}
+              height={80}
               alt="Upfront logo"
               className="transition-all duration-300"
               priority

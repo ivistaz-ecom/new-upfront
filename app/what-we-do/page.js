@@ -66,7 +66,7 @@ const Page = () => {
       <Header />
       <Seo {...seoProps} />
       <div>
-        <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[350px] h-[600px] flex flex-col pb-8">
+        <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col pb-8">
           <h1 className="text-white text-6xl mt-auto ps-16">
             WHAT <br /> WE DO
           </h1>

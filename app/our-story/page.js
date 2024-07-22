@@ -58,7 +58,7 @@ const metaImage = "/ourStory/banner.png"
      <Header />
 
      <Seo title={title} description={description} path={path} metaImage={metaImage} />  
-      <div className="lg:bg-[url('/ourStory/banner.png')] bg-[url('/ourStory/bannerMobile.png')] bg-cover lg:h-[350px] h-[600px] flex flex-col pb-8">
+      <div className="lg:bg-[url('/ourStory/banner.png')] bg-[url('/ourStory/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col pb-8">
        
         <h1 className="text-white text-6xl mt-auto lg:ps-16 ps-10">
           OUR <br /> STORY
@@ -86,10 +86,10 @@ const metaImage = "/ourStory/banner.png"
       <div className='hidden lg:block'>
         <div className="pb-16 container mx-auto flex justify-center">
           <Image
-            src="/ourStory/workForceWellbeing.png"
+            src="/ourStory/work-force.png"
             width={1000}
-            height={700}
-            className="w-11/12"
+            height={600}
+            className=""
             alt=""
           />
         </div>
