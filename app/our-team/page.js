@@ -31,7 +31,7 @@ const page = () => {
         metaImage={metaImage}
       />
       <div className="lg:bg-[url('/coreTeam/banner.png')] bg-[url('/coreTeam/banner_mobile.png')] bg-cover lg:h-[300px] h-80 lg:mt-0 flex flex-col">
-        <h1 className="text-white text-6xl mt-auto ps-16 lg:py-5">
+        <h1 className="text-white text-7xl mt-auto ps-16 lg:py-5">
           OUR <br /> TEAM
         </h1>
         </div>

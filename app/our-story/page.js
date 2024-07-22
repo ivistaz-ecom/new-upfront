@@ -60,7 +60,7 @@ const metaImage = "/ourStory/banner.png"
      <Seo title={title} description={description} path={path} metaImage={metaImage} />  
       <div className="lg:bg-[url('/ourStory/banner.png')] bg-[url('/ourStory/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col pb-8">
        
-        <h1 className="text-white text-6xl mt-auto lg:ps-16 ps-10">
+        <h1 className="text-white text-7xl mt-auto lg:ps-16 ps-10">
           OUR <br /> STORY
         </h1>
       </div>
@@ -121,21 +121,21 @@ const metaImage = "/ourStory/banner.png"
         <h4 className="lg:text-6xl text-3xl lg:px-16 px-7">
           <span className="text-red-600">OUR</span> <br /> HISTORY
         </h4>
-        <div className="flex pt-16 justify-center">
+        <div className="flex  justify-center">
           <Image
             src="/ourStory/our_history.png"
-            width={1000}
-            height={700}
-            className="w-11/12 hidden lg:block"
+            width={600}
+            height={600}
+            className=" "
             alt=""
           />
-          <Image
+          {/* <Image
             src="/ourStory/our_history_mobile.png"
             width={1000}
             height={700}
             className="w-11/12 block lg:hidden"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </>

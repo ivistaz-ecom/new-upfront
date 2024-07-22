@@ -106,7 +106,7 @@ const Page = () => {
         metaImage={metaImage}
       />
       <div className="lg:bg-[url('/contactUs/banner.png')] bg-[url('/contactUs/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col pb-8">
-        <h1 className="text-white text-6xl mt-auto lg:ps-16 ps-10">
+        <h1 className="text-white text-7xl mt-auto lg:ps-16 ps-10">
           CONTACT US
         </h1>
       </div>
