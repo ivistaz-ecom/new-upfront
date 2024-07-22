@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_14725" data-name="Rectangle 14725" width="140" height="140" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-Icon_02">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_02" data-name="Icon 02" clip-path="url(#clip-Icon_02)">
+    <g id="Mask_Group_50089" data-name="Mask Group 50089" clip-path="url(#clip-path)">
+      <g id="Group_50657" data-name="Group 50657" transform="translate(4.856 17.877)" style="isolation: isolate">
+        <g id="Group_49901" data-name="Group 49901" transform="translate(0.7 -13.883)">
+          <path id="Path_74120" data-name="Path 74120" d="M87.663,43,106.9,23.134s5.669-4.007,10.657,0c1.8,1.9,4.242,5.148,1.8,10.2s-25.1,29.888-25.1,29.888A24.958,24.958,0,0,1,76.465,70C65,69.91,43.145,70,43.145,70a16.507,16.507,0,0,0-11.276,6.785l-25.2-24.3.353-1S19.489,27.65,49.241,37.04l30.745.091a8.758,8.758,0,0,1,7.676,8.849c0,4.244-3.252,7.857-6.864,8.037H50.414" transform="translate(8.073 43.785)" fill="none" stroke="#dbdbdb" stroke-miterlimit="10" stroke-width="3"/>
+          <path id="Path_74121" data-name="Path 74121" d="M43.506,62.522h0a17.49,17.49,0,0,1-24.733.444L.7,45.532,12.843,32.945Z" transform="translate(-0.7 60.815)" fill="none" stroke="#dbdbdb" stroke-linejoin="round" stroke-width="3"/>
+          <rect id="Rectangle_14180" data-name="Rectangle 14180" width="12.575" height="38.981" transform="translate(35.407 29.127)" fill="none" stroke="#dbdbdb" stroke-miterlimit="10" stroke-width="3"/>
+          <rect id="Rectangle_14181" data-name="Rectangle 14181" width="12.575" height="51.738" transform="translate(56.335 16.37)" fill="none" stroke="#dbdbdb" stroke-miterlimit="10" stroke-width="3"/>
+          <rect id="Rectangle_14182" data-name="Rectangle 14182" width="12.575" height="68.108" transform="translate(76.576)" fill="none" stroke="#dbdbdb" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

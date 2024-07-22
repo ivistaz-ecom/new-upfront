@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <clipPath id="clip-Financial_and_Digital_Inclusion">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="Financial_and_Digital_Inclusion" data-name="Financial and Digital Inclusion" clip-path="url(#clip-Financial_and_Digital_Inclusion)">
+    <g id="Group_50619" data-name="Group 50619" transform="translate(231.425 16.208)" opacity="0.6">
+      <g id="Group_49763" data-name="Group 49763" transform="translate(-203.3 0.701)">
+        <path id="Path_73959" data-name="Path 73959" d="M84.449,33.9c-.006-3.49-.01-11.815,0-15.307,0-.691-.148-.918-.883-.991A74.489,74.489,0,0,1,43.539,1.178c-.737-.589-1.148-.67-1.947-.031A74.628,74.628,0,0,1,2.221,17.591C.735,17.752.735,17.75.735,19.245v19.22H.7q0,8.094,0,16.188A44.068,44.068,0,0,0,2.478,67.636C8.619,87.666,21.859,100.6,41.8,106.781a2.752,2.752,0,0,0,1.632-.052A56.149,56.149,0,0,0,66.064,94.26" transform="translate(-0.7 -0.701)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"/>
+        <path id="Path_73960" data-name="Path 73960" d="M53.594,16.467A30.726,30.726,0,1,1,11.624,27.722,30.727,30.727,0,0,1,53.594,16.467Z" transform="translate(5.559 10.011)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+        <path id="Path_73961" data-name="Path 73961" d="M36.792,23.808s-9.723-6.177-15.088.513c-2.106,2.785-2.484,8.414,7.544,9.819,7.544.438,10.32,9.879,2.288,12.435-8.479,1.866-12.7-3.4-12.7-3.4" transform="translate(15.98 18.16)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+        <line id="Line_124" data-name="Line 124" y2="34.98" transform="translate(43.794 34.877)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>
