@@ -28,10 +28,10 @@ const OurPresence = () => {
 
       <div className="lg:w-1/2 bg-red-600 flex flex-col justify-center items-center py-10">
         <div className="lg:w-3/5 space-y-4 lg:p-0 p-5 ">
-          <h2 className="lg:text-6xl text-3xl text-white">
+          <h2 className="lg:text-6xl text-3xl text-white lg:px-0 px-5">
             OUR <br /> PRESENCE
           </h2>
-          <p className="text-red-200 text-xl">
+          <p className="text-red-200 text-xl lg:px-0 px-5">
             We are based out of India and have worked across <b>17 states</b>{" "}
             and <b>UTs</b> within the country. Globally, we have worked in{" "}
             <b>12 countries across Asia and Africa</b>, touching the lives of{" "}

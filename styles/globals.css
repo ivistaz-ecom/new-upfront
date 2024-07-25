@@ -186,3 +186,41 @@ body {
 .wp-a-link {
   color: red !important;
 }
+
+.slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.slide div {
+  height: 100%;
+}
+
+.slide img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  padding: 2px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.nextArrow {
+  right: 1px;
+}
+
+.prevArrow {
+  right: 50px;
+}
+  
+

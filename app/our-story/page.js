@@ -77,8 +77,8 @@ const metaImage = "/ourStory/banner.png"
         {/* <OurStoryAccordion /> */}
       </div>
 
-      <div className="lg:px-24 px-7 py-16" ref={worforceRef}>
-        <h5 className="lg:text-6xl text-3xl">
+      <div className=" py-16 container mx-auto" ref={worforceRef}>
+        <h5 className="lg:text-6xl text-3xl lg:px-0 px-10">
           <span className="text-red-600">WHY</span> WORKFORCE <br /> WELLBEING?
         </h5>
       </div>
@@ -109,7 +109,7 @@ const metaImage = "/ourStory/banner.png"
 
       <div ref={webelievehRef}>
         <WeBelive />
-      </div>
+      </div>  
 
       <div ref={visionmissionRef}>
         <OurVision />
@@ -117,11 +117,11 @@ const metaImage = "/ourStory/banner.png"
 
       <OurMission />
 
-      <div className="px-5 py-16" ref={ourhistoryRef}>
-        <h4 className="lg:text-6xl text-3xl lg:px-16 px-7">
+      <div className="py-16 container mx-auto" ref={ourhistoryRef}>
+        <h4 className="lg:text-6xl text-3xl lg:px-0 px-10">
           <span className="text-red-600">OUR</span> <br /> HISTORY
         </h4>
-        <div className="flex  justify-center">
+        <div className="flex justify-center">
           <Image
             src="/ourStory/our_history.png"
             width={600}

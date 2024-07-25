@@ -10,7 +10,7 @@ const WeBelieve = () => {
     return (
         <div className="lg:flex items-center gap-4 bg-customGray">
             <div className="flex">
-                <div className="h-full text-white flex items-center justify-center px-10 lg:py-20 py-10 ">
+                <div className="h-full text-white flex items-center justify-center px-10 lg:py-20 py-10">
                     <h2 className="lg:text-6xl text-3xl text-white">
                         WE <br /> BELIEVE
                     </h2>
@@ -18,7 +18,7 @@ const WeBelieve = () => {
                 {/* <div className="triangle-right self-center"></div> */}
             </div>
             <ul
-                className="lg:flex gap-10 lg:ps-14 ps-7" 
+                className="lg:flex gap-10  ps-7 container mx-auto" 
             >
                 {weBelieve.map((item) => {
                     return (    

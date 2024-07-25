@@ -117,8 +117,9 @@ const HealthWellbeing = () => {
           <p className="pt-3">
             Women's health requires special attention. Through targeted
             initiatives, we raise awareness about menstrual health and hygiene,
-            maternal health, family planning, and offer screenings for cancers
-            related to women, ensuring comprehensive care for all women workers.
+            maternal health, and family planning and offer screenings for
+            cancers related to women, ensuring comprehensive care for all women
+            workers
           </p>
         </div>
       </div>

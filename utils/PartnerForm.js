@@ -105,7 +105,7 @@ const PartnerForm = ({ subject }) => {
     <>
       {/* {successMessage ? '' : (<small style={{ color: '#555' }}></small>)} */}
       {/* {successMessage ? '' : (<h3>Submit a CV/Resume:</h3>)} */}
-      <div className="form-bg mb-5 bg-[#4A4A4A] lg:w-1/2 w-full">
+      <div className="form-bg mb-5 bg-[#4A4A4A] lg:w-1/2 w-full container">
         {formVisible ? (
           <form onSubmit={handleSubmit} encType="multipart/form-data" className='px-5 py-2 gap-4'>
             <div className="mb-3 border mt-7">

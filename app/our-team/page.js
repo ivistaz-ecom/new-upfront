@@ -37,16 +37,16 @@ const page = () => {
         </div>
       <div
         className="px-10 py-16 "
-        data-aos="fade-down"
-        data-aos-duration="1000"
+        // data-aos="fade-down"
+        // data-aos-duration="1000"
       >
-        <h1 className="lg:text-6xl text-3xl mb-6 lg:px-16 mt-">
+        <h1 className="lg:text-6xl text-3xl mb-6 lg:px-10 container mx-auto">
           <span className="text-red-600">CORE</span> TEAM
         </h1>
         <hr />
         <ul
           className="grid lg:grid-cols-4 gap-8 container mx-auto"
-          data-aos="fade-up"
+          // data-aos="fade-up"
         >
           {coreTeam.map((item, index) => {
             return (
@@ -74,16 +74,16 @@ const page = () => {
 
       <div
         className="px-10 py-16 "
-        data-aos="fade-down"
-        data-aos-duration="1000"
+        // data-aos="fade-down"
+        // data-aos-duration="1000"
       >
-        <h2 className="lg:text-6xl text-3xl mb-6 lg:px-16 mt-">
+        <h2 className="lg:text-6xl text-3xl mb-6 lg:px-10 container mx-auto">
           <span className="text-red-600">OUR</span> MENTORS
         </h2>
         <hr />
         <ul
           className="grid lg:grid-cols-4 gap-8 container mx-auto"
-          data-aos="fade-up"
+          // data-aos="fade-up"
         >
           {ourAdvisors.map((item, index) => {
             return (

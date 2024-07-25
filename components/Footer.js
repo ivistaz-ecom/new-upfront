@@ -49,15 +49,15 @@ const Footer = () => {
               </Link>
             </ul>
             <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
-              <h3 className="text-white text-2xl">What We Do</h3>
+              <Link  href="/what-we-do"><h3 className="text-white text-2xl">What We Do</h3></Link>
               <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
-              <Link
+              {/* <Link
                 href="/what-we-do"
                 className="flex gap-10 text-white/60  hover:text-red-600 group"
               >
                 <li className="flex-grow">What We Do</li>
-                <FaArrowRight className="mt-1 me-20 group-hover:animate-spin " />
-              </Link>
+             a
+              </Link> */}
             </ul>
             <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
               <h3 className="text-white text-2xl">Insights</h3>

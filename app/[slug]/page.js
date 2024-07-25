@@ -37,7 +37,6 @@ const Post = ({ params }) => {
 
   if (isLoading) {
     return <div>Loading...</div>;
-    x;
   }
 
   if (error || !data || data.length === 0) {
@@ -59,7 +58,7 @@ const Post = ({ params }) => {
             <meta name="description" content={post.acf.meta_description} />
             {/* <meta name="robots" content="index, follow" /> */}
             <meta http-equiv="content-language" content="en"></meta>
-            <meta name="robots" content="index,follow"></meta>
+            <meta name="robots" content="index, follow" />
             <link rel="canonical" href="https://upfront.global  " />
           </head>
 

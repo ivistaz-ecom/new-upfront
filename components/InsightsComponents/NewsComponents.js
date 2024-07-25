@@ -88,7 +88,7 @@ const NewsComponents = () => {
                         href={`${post.acf.news_and_publications_url}`}
                         className="px-7"
                       >
-                        Read more
+                        Read More
                       </Link>
                     </Button>
                   </div>

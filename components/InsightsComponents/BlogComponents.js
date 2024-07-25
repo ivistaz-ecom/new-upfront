@@ -73,7 +73,7 @@ const BlogComponents = () => {
                   ></div>
                   <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
                     <Link href={`/insights/blog/${post.slug}`} className="px-7">
-                      Read more
+                      Read More
                     </Link>
                   </Button>
                 </div>

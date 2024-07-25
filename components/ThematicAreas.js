@@ -43,26 +43,28 @@ const ThematicAreas = () => {
   return (
     <div className="lg:flex items-center lg:gap-4 bg-customGray">
       <div className="flex">
-        <div className="lg:bg-customGrayMd h-full text-white flex items-center justify-center px-10 lg:py-16 py-16">
+        <div className="lg:bg-customGrayMd h-60 text-white flex items-center justify-center px-10 lg:py-16 py-16">
           <h2 className="lg:text-6xl text-3xl text-white">
             THEMATIC <br /> AREAS
           </h2>
         </div>
         <div className="triangle-right self-center hidden lg:block"></div>
       </div>
-      <div className="lg:w-[72%] w-[90%] lg:py-0">
+      <div className="lg:w-[72%] w-[90%] lg:py-0 container mx-auto">
         <Slider {...settings} className="hide-scrollbar">
           {thematicAreas.map((item) => {
             return (
-              <div key={item.id} className="px-5 border-s lg:h-36 h-48">
+              <div key={item.id} className="px-5 border-s lg:h-44 h-32">
                 <div className="space-y-3 flex flex-col justify-center items-center">
                   <Image
                     src={item.logo}
-                    width={item.width}
-                    height={item.height}
+                    width={60}
+                    height={60}
                     alt={item.title}
                   />
-                  <p className="text-white text-center py-2">{item.title}</p>
+                  
+                  <p className="text-white text-center py-4">{item.title}</p>
+                
                 </div>
               </div>
             )

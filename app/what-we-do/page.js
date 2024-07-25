@@ -99,7 +99,7 @@ const Page = () => {
         <div
           ref={ourApproachRef}
           id="approach"
-          className="bg-[url('/whatWeDo/rectangle.png')] bg-no-repeat bg-cover flex flex-col items-center lg:p-10 p-3 text-center"
+          className="bg-[url('/whatWeDo/rectangle.png')] bg-no-repeat bg-cover flex flex-col items-center lg:p-10 p-3 text-center container mx-auto"
         >
           <h2 className="lg:text-6xl text-3xl">APPROACH</h2>
           <div className="bg-white lg:px-24 mt-10">
@@ -153,7 +153,7 @@ const Page = () => {
           id="resilience"
           className="bg-customLightGray lg:p-12 p-4 flex justify-center mb-12"
         >
-          <div className="lg:w-2/3 space-y-5 text-center">
+          <div className="lg:w-2/3 space-y-5 text-center container mx-auto">
             <h2 className="lg:text-6xl text-3xl">
               BUILDING RESILIENCE OF <br /> WORKFORCES
             </h2>
@@ -169,7 +169,7 @@ const Page = () => {
               width={600}
               height={400}
               alt="People Resilience"
-              className="w-full hidden lg:block"
+              className="w-full hidden lg:block container mx-auto"
             />
             <Image
               src="/whatWeDo/People_Resilience_Mobile.png"

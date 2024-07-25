@@ -50,7 +50,7 @@ const Page = () => {
         );
       case "Contact Info":
         return (
-          <div className="lg:ps-10 p-5 lg:w-1/2">
+          <div className="lg:ps-10 p-5 lg:w-1/2 container">
             <div className="mt-10">
               <h2 className="text-black lg:text-6xl text-3xl">CONTACT INFO</h2>
             </div>
@@ -70,12 +70,14 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="lg:flex text-xl border-b border-gray-400">
+          
+            <div className="lg:flex text-xl ">
               <div className="lg:p-4 pt-5 pb-2 lg:pb-0">Email:</div>
               <Link href="mailto:info@upfrontglobal.com">
                 <div className="lg:pt-4 pb-2">info@upfrontglobal.com</div>
               </Link>
             </div>
+            <div className=" text-xl border-b border-gray-400 lg:mx-4"/>
 
             {/* <div className="lg:grid grid-cols-3 lg:gap-4 text-xl">
               <div className="lg:p-4 px-4 pt-5">Phone Number:</div>

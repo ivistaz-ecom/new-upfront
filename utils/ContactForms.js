@@ -155,7 +155,7 @@ const ContactForm = ({ subject }) => {
   };
 
   return (
-    <div className="bg-[#4A4A4A] py-1 px-5 mt-5 lg:w-1/2">
+    <div className="bg-[#4A4A4A] py-1 px-5 mt-5 lg:w-1/2 container">
       {formVisible ? (
         <>
           <p className="text-white mt-5">
