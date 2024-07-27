@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { ThematicAreas } from '@utils/data'
@@ -49,8 +49,7 @@ const ThematicCarousel = React.forwardRef((props, ref) => {
                 data-aos="zoom-in"
               >
                 <img src={item.imageUrl} className="" />
-                <p className="text-white text-1xl font-light">
-                  {item.headline}
+                <p className="text-white text-1xl font-light" dangerouslySetInnerHTML={{ __html: item.headline }}>
                 </p>
               </div>
             </div>
