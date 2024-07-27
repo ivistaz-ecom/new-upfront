@@ -3,7 +3,7 @@ import React from "react";
 export default function WellBeing() {
   return (
     <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-7 mt-6 tracking-wide">
-      <h1 className="lg:text-6xl text-3xl text-center">
+      <h1 className="lg:text-5xl text-3xl text-center">
         <span className="text-red-600 ">WHY <br /></span> WORKFORCE WELLBEING
       </h1>
       <img

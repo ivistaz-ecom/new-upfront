@@ -50,7 +50,7 @@ const ThematicDesktop = () => {
       <div className="mt-10 container mx-auto">
         <p className="text-center text-6xl pb-10 text-[#222222]">THEMATIC AREAS</p>
         <div>
-          <ul className="talkbubble-container text-md font-medium text-center ms-3 container w-screen mt-4" role="tablist">
+          <ul className="talkbubble-container text-md font-medium text-center lg:ms-3 container w-screen mt-4" role="tablist">
             <li role="presentation">
               <button
                 onClick={() => handleTabClick('profile')}

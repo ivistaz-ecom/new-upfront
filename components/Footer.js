@@ -63,19 +63,21 @@ const Footer = () => {
               <h3 className="text-white text-2xl">Insights</h3>
               <div className="lg:w-[220px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link
-                href="/insights/#Stories (Blogs)"
-                className="flex items-center justify-between text-white/60 hover:text-red-600 group"
-              >
-                <li className="flex-grow">Stories (Blogs)</li>
-                <FaArrowRight className="me-20 group-hover:animate-spin " />
-              </Link>
-              <Link
                 href="/insights"
-                className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 group "
+                className="flex items-center justify-between text-white/60  hover:text-red-600 group "
               >
                 <li className="flex-grow">Case Studies</li>
                 <FaArrowRight className="me-20 group-hover:animate-spin " />
               </Link>
+
+              <Link
+                href="/insights/#Stories (Blogs)"
+                className="flex items-center justify-between text-white/60 hover:text-red-600 group mt-2"
+              >
+                <li className="flex-grow">Stories (Blogs)</li>
+                <FaArrowRight className="me-20 group-hover:animate-spin" />
+              </Link>
+              
               {/* <Link
                 href="/insights"
                 className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 group"
@@ -130,7 +132,7 @@ const Footer = () => {
       </div>
       <div className="bg-customGray flex py-6 justify-center items-center">
         <p className="text-gray-400 text-center lg:p-0 px-1">
-        Upfront is a part of the Catalyst Group. Copyright 2024. All Rights Reserved. </p>
+        Upfront is a part of the Catalyst Group. <br className="lg:hidden block"/> Copyright 2024. All Rights Reserved. </p>
       </div>
     </>
   );

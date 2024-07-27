@@ -36,10 +36,10 @@ const Page = () => {
       case "Approach":
         scrollToSection(ourApproachRef);
         break;
-      case "Building Resilience of the Workforces":
+      case "Building Resilience of the Workforce":
         scrollToSection(resilienceRef);
         break;
-      case "Key Communities":
+      case "Our Communities":
         scrollToSection(keyCommunitiesRef);
         break;
       case "Thematic Areas":
@@ -106,7 +106,7 @@ const Page = () => {
             <div className="w-full flex justify-center">
               <Image
                 src="/whatWeDo/ourApproach.png"
-                width={500}
+                width={1000}
                 height={500}
                 alt="Our Approach"
                 className="lg:mb-10 lg:w-3/4 w-full hidden lg:block"
@@ -155,7 +155,7 @@ const Page = () => {
         >
           <div className="lg:w-2/3 space-y-5 text-center container mx-auto">
             <h2 className="lg:text-6xl text-3xl">
-              BUILDING RESILIENCE OF THE<br /> WORKFORCES
+              BUILDING RESILIENCE OF THE<br /> WORKFORCE
             </h2>
             <p className="text-[#222222] text-xl">
               Upfront focuses on fostering individual resilience by building
@@ -166,7 +166,7 @@ const Page = () => {
             </p>
             <Image
               src="/whatWeDo/People_Resilience.png"
-              width={600}
+              width={1000}
               height={400}
               alt="People Resilience"
               className="w-full hidden lg:block container mx-auto"
