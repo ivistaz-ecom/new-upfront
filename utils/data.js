@@ -952,10 +952,10 @@ export const HomeWhoWeAre = [
 ]
 
 export const HomeCount = [
-  { count: '582405', title: 'Factory Workforce', border: '' },
-  { count: '1687', title: 'Frontline Health Workforce', border: '' },
-  { count: '40830', title: 'Street Vendor Workforce', border: '' },
-  { count: '65032', title: 'Women Workforce', border: '' },
+  { count: '582405', title: 'Factory <br> Workforce', border: '' },
+  { count: '1687', title: 'Frontline Health <br>Workforce', border: '' },
+  { count: '40830', title: 'Street Vendor <br> Workforce', border: '' },
+  { count: '65032', title: 'Women  <br> Workforce', border: '' },
 ]
 
 export const HomeBrands = [

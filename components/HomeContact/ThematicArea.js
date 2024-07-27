@@ -20,7 +20,7 @@ const Content = React.forwardRef((props, ref) => {
           <div className="grid grid-cols-3 gap-2">
             {ThematicAreas.slice(0, 3).map((item, index) => (
               <div
-                className="flex justify-center items-center rounded-full w-[200px] h-[200px] bg-[#676767] mx-auto hover:bg-red-600"
+                className="flex justify-center items-center rounded-full w-[200px] h-[200px] bg-[#676767] mx-auto hover:bg-red-600 duration-1000"
                 key={index}
               >
                 <div
@@ -38,7 +38,7 @@ const Content = React.forwardRef((props, ref) => {
           <div className="grid grid-cols-4 mx-auto">
             {ThematicAreas.slice(3, 7).map((item, index) => (
               <div
-                className="flex justify-center items-center rounded-full w-[200px] h-[200px] bg-[#676767] hover:bg-red-600"
+                className="flex justify-center items-center rounded-full w-[200px] h-[200px] bg-[#676767] hover:bg-red-600 duration-1000"
                 key={index}
               >
                 <div
@@ -57,7 +57,7 @@ const Content = React.forwardRef((props, ref) => {
           <div className="grid grid-cols-3">
             {ThematicAreas.slice(7, 10).map((item, index) => (
               <div
-                className="flex justify-center items-center rounded-full w-[200px] h-[200px] bg-[#676767] mx-auto hover:bg-red-600"
+                className="flex justify-center items-center rounded-full w-[200px] h-[200px] bg-[#676767] mx-auto hover:bg-red-600 duration-1000"
                 key={index}
               >
                 <div

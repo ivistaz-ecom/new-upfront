@@ -112,7 +112,7 @@ const Page = () => {
                 className="lg:mb-10 lg:w-3/4 w-full hidden lg:block"
               />
               <Image
-              src="/whatWeDo/ourApproachMobile.png"
+              src="/whatWeDo/approach_mobile.png"
               width={500}
               height={500}
               alt="Our Approach Mobile"
