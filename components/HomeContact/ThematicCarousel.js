@@ -37,7 +37,7 @@ const ThematicCarousel = React.forwardRef((props, ref) => {
           autoPlaySpeed={2000}
           dotListClass="custom-dot-list"
           removeArrowOnDeviceType={['tablet', 'desktop']}
-          className="h-[300px] bg-transparent container mx-auto"
+          className="h-[300px] bg-transparent container mx-auto z-0"
         >
           {ThematicAreas.map((item, index) => (
             <div

@@ -50,10 +50,10 @@ body {
 }
 
 /* Custom CSS for the triangle */
-.triangle-right {
+/* .triangle-right {
   position: relative;
-  background: #E8E8E8;
-}
+  background: #E8E8E8; */
+/* }
 
 .triangle-right:after {
   content: "";
@@ -65,7 +65,7 @@ body {
   border-top: 200px solid transparent;
   border-bottom: 200px solid transparent;
   border-left: 200px solid white;
-}
+} */
 
 
 

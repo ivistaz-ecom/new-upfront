@@ -53,7 +53,7 @@
         >
           {HomeBanner.map((items, index) => (
             <div className="grid lg:grid-cols-2 gap-0  h-[400px] justify-center items-center triangale-right">
-              <div className="text-4xl justify-start items-start flex flex-col gap-4 lg:w-8/12  lg:ml-40 ml-10 pt-5">
+              <div className="text-4xl justify-start items-start flex flex-col gap-4 lg:w-8/12  lg:ml-40 ml-3 lg:py-0 py-4 pt-5">
                 <h3 className="text-[#F40F34] text-[24px]">{items.headline}</h3>
                 <p className="text-[#292929] text-[34px] ">{items.desc}</p>
               </div>
