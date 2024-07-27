@@ -38,7 +38,7 @@ const InsightsAllCategoriesComponents = () => {
         <div className={getContentClass('Case Studies')}>
           <CaseStudiesComponents visibleItems={visibleItems} />
         </div>
-        <div  className={getContentClass('Stories (Blogs)')}>
+        <div  className={getContentClass('Stories (Blogs)')} id='Stories (Blogs)'>
           <BlogComponents visibleItems={visibleItems} />
         </div>
         <div className={getContentClass('News and Publications')}>

@@ -265,3 +265,39 @@ body {
   background-color: red;
   color: white;
 }
+
+
+.custom-dot-list .react-multi-carousel-dot button {
+  background-color: transparent;
+  border-color: white;
+}
+
+.custom-dot-list .react-multi-carousel-dot--active button {
+  background-color: #F40F34; /* Change to your preferred active color */
+}
+
+.custom-arrow .react-multiple-carousel__arrow--left,
+.custom-arrow .react-multiple-carousel__arrow--right {
+  background-color: transparent; 
+  color: #ffffff;
+}
+
+.custom-arrow .react-multiple-carousel__arrow--left::before,
+.custom-arrow .react-multiple-carousel__arrow--right::before {
+  color: #F40F34;
+}
+
+#triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #E8E8E8;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  /* right: 0; */
+  left: 0; /* Align to the right */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  
+}
+

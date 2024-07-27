@@ -8,7 +8,7 @@ import SocialProtection from '@components/SocialProtection';
 
 const ThematicDesktop = () => {
   const [selectedTab, setSelectedTab] = useState('profile');
-  const [isModalOpen, setIsModalOpen] = useState(<HealthWellbeing/>);
+  const [isModalOpen, setIsModalOpen] = useState(null)
   const modalRef = useRef(null);
 
   const handleTabClick = (tab) => {

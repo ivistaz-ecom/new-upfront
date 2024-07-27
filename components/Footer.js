@@ -63,7 +63,7 @@ const Footer = () => {
               <h3 className="text-white text-2xl">Insights</h3>
               <div className="lg:w-[220px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link
-                href="/insights/#stories"
+                href="/insights/#Stories (Blogs)"
                 className="flex items-center justify-between text-white/60 hover:text-red-600 group"
               >
                 <li className="flex-grow">Stories (Blogs)</li>

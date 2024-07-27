@@ -7,7 +7,7 @@ const GenderEquality = () => {
       <div className="">
         <Image
           src="/whatWeDo/tab-2.png"
-          width={600}
+          width={1000}
           height={300}
           alt=""
           className="w-[900px]"

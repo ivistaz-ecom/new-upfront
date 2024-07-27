@@ -7,7 +7,7 @@ const AgencyBuilding = () => {
       <div className="">
         <Image
           src="/whatWeDo/tab-3.png"
-          width={600}
+          width={1000}
           height={300}
           alt=""
           className="w-[900px]"
@@ -15,7 +15,7 @@ const AgencyBuilding = () => {
       </div>
 
       <div className="lg:flex">
-        <div className="lg:w-1/2   p-4 ">
+        <div className="lg:w-1/2 p-4">
          
 
           <div className="flex flex-row ">
@@ -25,7 +25,7 @@ const AgencyBuilding = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="lg:w-14"
+                className="w-16"
               />
             </div>
             <div className="flex flex-col px-3">
