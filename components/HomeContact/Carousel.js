@@ -29,7 +29,7 @@ const Content = React.forwardRef((props, ref) => {
 
   return (
     <div className="bg-[#f2f2f2]">
-      <div className="bg-[#f2f2f2] pt-12 w-[90%] mx-auto">
+      <div className="bg-[#f2f2f2] w-[90%] mx-auto">
         <Carousel
           responsive={responsive}
           showDots={true}
@@ -37,12 +37,12 @@ const Content = React.forwardRef((props, ref) => {
           autoPlay={false}
           autoPlaySpeed={2000}
           //   customTransition="all .5"
-          dotListClass=""
+          dotListClass="custom-dot-list"
           removeArrowOnDeviceType={['tablet', 'mobile', 'desktop']}
           className="h-[300px] bg-transparent container mx-auto"
         >
           {HomeWhoWeAre.map((items, index) => (
-            <div className="h-[250px] justify-center items-center p-4">
+            <div className="h-[200px] justify-center items-center p-4">
               <div className="lg:w-[100%]" key={index} data-aos="zoom-in">
                 <img src={items.imageUrl} className="" />
               </div>

@@ -16,8 +16,6 @@ const AgencyBuilding = () => {
 
       <div className="lg:flex">
         <div className="lg:w-1/2 p-4">
-         
-
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
@@ -30,8 +28,7 @@ const AgencyBuilding = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium ">
-                EQUIPPING WOMEN AND YOUNG GIRLS WITH KNOWLEDGE AND
-                LIFE SKILLS:
+                Equipping Women And Young Girls With Knowledge and Life Skills:
               </p>
             </div>
           </div>
@@ -56,7 +53,8 @@ const AgencyBuilding = () => {
             </div>
             <div className="lg:flex flex-col px-3 ">
               <p className="text-md font-medium ">
-                CHARTING CAREER <br></br>PROGRESSION PATHWAYS:
+                Charting Career <br />
+                Progression Pathways:
               </p>
             </div>
           </div>
@@ -74,6 +72,6 @@ const AgencyBuilding = () => {
       </div>
     </>
   );
-};    
+};
 
 export default AgencyBuilding;

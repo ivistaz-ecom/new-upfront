@@ -113,7 +113,7 @@ const ourKeyCommunities = () => {
   return (
     <div className="space-y-5 lg:px-10 mb-10 text-center">
       <h2 className="lg:text-6xl text-3xl mb-10">
-        KEY <br /> COMMUNITIES
+        OUR <br /> COMMUNITIES
       </h2>
 
       <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-4 mx-auto container">

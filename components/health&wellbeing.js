@@ -16,8 +16,6 @@ const HealthWellbeing = () => {
 
       <div className="lg:flex">
         <div className="lg:w-1/2  p-4">
-         
-
           <div className="flex flex-row">
             <div className="flex flex-col">
               <Image
@@ -30,16 +28,16 @@ const HealthWellbeing = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium">
-                NUTRITION, SANITATION AND
-                <br /> PERSONAL HYGIENE:
+                Nutrition, Sanitation and <br />
+                Personal Hygiene:
               </p>
             </div>
           </div>
           <p className="pt-3">
             We believe that everyday habits play a crucial role in maintaining
-            good health. Through education and resources, we empower workers to
-            make informed choices about nutrition, sanitation, and personal
-            hygiene, promoting overall wellness in the workplace.
+            good health. Through education and resources, we empower the
+            workforce to make informed choices about nutrition, sanitation, and
+            personal hygiene, promoting overall wellness in the workplace.
           </p>
         </div>
         <div className="lg:w-1/2  p-4">
@@ -55,8 +53,8 @@ const HealthWellbeing = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium">
-                STRESS MANAGEMENT AND <br />
-                MENTAL HEALTH:
+                Stress Management and <br />
+                Mental Health:
               </p>
             </div>
           </div>
@@ -83,8 +81,8 @@ const HealthWellbeing = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium">
-                PRIMARY HEALTH AND
-                <br /> NON-COMMUNICABLE DISEASES (NCDS):
+                Primary Health <br />
+                Non-Communicable Diseases (NCDs):
               </p>
             </div>
           </div>
@@ -107,7 +105,7 @@ const HealthWellbeing = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium pt-2">
-                WOMEN’S HEALTH AND WELLBEING:
+                Women’s Health and Wellbeing:
               </p>
             </div>
           </div>
@@ -117,7 +115,7 @@ const HealthWellbeing = () => {
             initiatives, we raise awareness about menstrual health and hygiene,
             maternal health, and family planning and offer screenings for
             cancers related to women, ensuring comprehensive care for all women
-            workers
+            in the workforce.
           </p>
         </div>
       </div>

@@ -16,7 +16,6 @@ const Financial = () => {
 
       <div className="lg:flex">
         <div className="lg:w-1/2   p-4 ">
-          
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
@@ -29,7 +28,8 @@ const Financial = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium ">
-                FINANCIAL PLANNING AND <br></br>SERVICE LINKAGES:
+                Financial Planning and <br />
+                Service Linkages:
               </p>
             </div>
           </div>
@@ -60,14 +60,15 @@ const Financial = () => {
             </div>
             <div className="lg:flex flex-col px-3 ">
               <p className="text-md font-medium ">
-                DIGITAL FINANCIAL <br></br> LITERACY:
+                Digital Financial <br />
+                Literacy:
               </p>
             </div>
           </div>
 
           <p className="pt-3">
             In today's digital age, understanding how to navigate digital
-            financial services is essential.We provide information and create
+            financial services is essential. We provide information and create
             awareness on digital financial literacy, covering topics such as
             online banking, mobile payments, and cybersecurity. By improving
             digital literacy skills, we empower our workforce to access and

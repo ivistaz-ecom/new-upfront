@@ -10,13 +10,12 @@ const SocialProtection = () => {
           width={1000}
           height={300}
           alt=""
-          className="w-[900px]" 
+          className="w-[900px]"
         />
       </div>
 
       <div className="lg:flex ">
         <div className="lg:w-1/2  p-4">
-         
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
@@ -28,7 +27,7 @@ const SocialProtection = () => {
               />
             </div>
             <div className="flex flex-col px-3">
-              <p className="text-md font-medium pt-2">AWARENESS & ACCESS:</p>
+              <p className="text-md font-medium pt-2">Awareness & Access:</p>
             </div>
           </div>
           <p className="pt-5">
@@ -52,7 +51,7 @@ const SocialProtection = () => {
               />
             </div>
             <div className="flex flex-col px-3">
-              <p className="text-md font-medium pt-3">UNIVERSAL HELP DESK:</p>
+              <p className="text-md font-medium pt-3">Universal Help Desk:</p>
             </div>
           </div>
 
@@ -78,7 +77,7 @@ const SocialProtection = () => {
             />
           </div>
           <div className="flex flex-col px-3 lg:w-1/2">
-            <p className="text-md font-medium pt-1">MAPPING AND RESEARCH:</p>
+            <p className="text-md font-medium pt-1">Mapping and Research:</p>
           </div>
         </div>
 

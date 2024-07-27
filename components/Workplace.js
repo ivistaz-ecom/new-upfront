@@ -16,7 +16,6 @@ const Workplace = () => {
 
       <div className="lg:flex ">
         <div className="lg:w-1/2 p-4">
-        
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
@@ -29,7 +28,7 @@ const Workplace = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium ">
-                EFFECTIVE COMMUNICATION <br></br>& PROBLEM SOLVING:
+                Effective Communication <br />& Problem Solving:
               </p>
             </div>
           </div>
@@ -56,7 +55,8 @@ const Workplace = () => {
             </div>
             <div className="lg:flex flex-col px-3">
               <p className="text-md font-medium ">
-                RIGHTS & <br></br> RESPONSIBILITIES:
+                RIGHTS & <br />
+                RESPONSIBILITIES:
               </p>
             </div>
           </div>

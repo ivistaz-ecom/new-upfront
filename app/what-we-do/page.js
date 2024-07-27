@@ -155,7 +155,7 @@ const Page = () => {
         >
           <div className="lg:w-2/3 space-y-5 text-center container mx-auto">
             <h2 className="lg:text-6xl text-3xl">
-              BUILDING RESILIENCE OF <br /> WORKFORCES
+              BUILDING RESILIENCE OF THE<br /> WORKFORCES
             </h2>
             <p className="text-[#222222] text-xl">
               Upfront focuses on fostering individual resilience by building

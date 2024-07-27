@@ -172,7 +172,7 @@ export const weBelieve = [
   {
     id: 2,
     logo: '/ourStory/we_believe/thematic2.svg',
-    title: 'Wellbeing outcomes for workers and businesses can both be achieved; but not at the cost of each other',
+    title: 'Wellbeing outcomes for the workforce and businesses can both be achieved; but not at the cost of each other',
   },
   {
     id: 3,
@@ -465,11 +465,11 @@ export const whatWeDoTabs = [
   },
   {
     id: 3,
-    tab: 'Building Resilience of the Workforces',
+    tab: 'Building Resilience of the Workforce',
   },
   {
     id: 4,
-    tab: 'Key Communities',
+    tab: 'Our Communities',
   },
   {
     id :5,
@@ -903,31 +903,31 @@ export const HomeBanner = [
   {
     imageUrl:
       '/homePage/home1.png',
-    headline: 'Making Wellbeing Reality for Workforces',
+    headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By working with workforces and systems',
   },
   {
     imageUrl:
       '/homePage/home2.png',
-    headline: 'Making Wellbeing Reality for Workforces',
+    headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By changing mindsets, behaviours and practices',
   },
   {
     imageUrl:
       '/homePage/home3.png',
-    headline: 'Making Wellbeing Reality for Workforces',
+    headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By improving skills, financial security, processes and policies',
   },
   {
     imageUrl:
       '/homePage/home4.png',
-    headline: 'Making Wellbeing Reality for Workforces',
+    headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By building agency, ensuring voices and choices',
   },
   {
     imageUrl:
       '/homePage/home5.png',
-    headline: 'Making Wellbeing Reality for Workforces',
+    headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By establishing partnerships and collaborations',
   },
 ]
@@ -994,7 +994,7 @@ export const ThematicAreas = [
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-3.svg',
-    headline: 'Preventive and promotive health',
+    headline: 'Preventive and Promotive Health',
   },
   {
     imageUrl:
@@ -1014,17 +1014,17 @@ export const ThematicAreas = [
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-4.svg',
-    headline: 'Just Transition & Climate actions',
+    headline: 'Just Transition & Climate Actions',
   },
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-5.svg',
-    headline: 'Safe & sustainable accommodation',
+    headline: 'Safe & Sustainable Accommodation',
   },
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-9.svg',
-    headline: 'Career Progression For Women',
+    headline: 'Career Progression for Women',
   },
   {
     imageUrl:

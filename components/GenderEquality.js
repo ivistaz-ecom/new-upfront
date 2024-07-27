@@ -16,7 +16,6 @@ const GenderEquality = () => {
 
       <div className="lg:flex">
         <div className="lg:w-1/2 w-full p-4">
-         
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
@@ -29,7 +28,8 @@ const GenderEquality = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium ">
-                ADDRESSING SEXUAL HARASSMENT<br></br> AND GENDER-BASED VIOLENCE:
+                Addressing Sexual Harassment <br />
+                and Gender-Based Violence:
               </p>
             </div>
           </div>
@@ -56,7 +56,8 @@ const GenderEquality = () => {
             </div>
             <div className="flex flex-col px-3 ">
               <p className="text-md font-medium ">
-                CREATING INCLUSIVE <br></br>WORKPLACES:
+                Creating Inclusive <br />
+                Workplaces:
               </p>
             </div>
           </div>
