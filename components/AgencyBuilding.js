@@ -28,7 +28,7 @@ const AgencyBuilding = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium ">
-                Equipping Women And Young Girls With Knowledge and Life Skills:
+                Equipping Women And Young Girls With Knowledge and Life Skills
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ const AgencyBuilding = () => {
             <div className="lg:flex flex-col px-3 ">
               <p className="text-md font-medium ">
                 Charting Career <br />
-                Progression Pathways:
+                Progression Pathways
               </p>
             </div>
           </div>

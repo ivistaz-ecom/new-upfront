@@ -27,7 +27,7 @@ const SocialProtection = () => {
               />
             </div>
             <div className="flex flex-col px-3">
-              <p className="text-md font-medium pt-2">Awareness & Access:</p>
+              <p className="text-md font-medium pt-2">Awareness & Access</p>
             </div>
           </div>
           <p className="pt-5">
@@ -51,7 +51,7 @@ const SocialProtection = () => {
               />
             </div>
             <div className="flex flex-col px-3">
-              <p className="text-md font-medium pt-3">Universal Help Desk:</p>
+              <p className="text-md font-medium pt-3">Universal Help Desk</p>
             </div>
           </div>
 
@@ -77,7 +77,7 @@ const SocialProtection = () => {
             />
           </div>
           <div className="flex flex-col px-3 lg:w-1/2">
-            <p className="text-md font-medium pt-1">Mapping and Research:</p>
+            <p className="text-md font-medium pt-1">Mapping and Research</p>
           </div>
         </div>
 

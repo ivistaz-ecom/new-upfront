@@ -989,12 +989,12 @@ export const ThematicAreas = [
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-6.svg',
-    headline: 'Agency Building',
+    headline: 'Agency<br> Building',
   },
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-3.svg',
-    headline: 'Preventive and Promotive Health',
+    headline: 'Preventive and <br> Promotive Health',
   },
   {
     imageUrl:
@@ -1004,17 +1004,17 @@ export const ThematicAreas = [
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-2.svg',
-    headline: 'Social Protection',
+    headline: 'Social <br> Protection',
   },
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-7.svg',
-    headline: 'Gender Equality & Equity',
+    headline: 'Gender Equality & <br> Equity',
   },
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-4.svg',
-    headline: 'Just Transition & Climate Actions',
+    headline: 'Just Transition & <br> Climate Actions',
   },
   {
     imageUrl:
@@ -1034,6 +1034,6 @@ export const ThematicAreas = [
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-7.svg',
-    headline: 'Inclusive Workplaces',
+    headline: 'Inclusive <br> Workplaces',
   },
 ]

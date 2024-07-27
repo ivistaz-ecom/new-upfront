@@ -29,7 +29,7 @@ const GenderEquality = () => {
             <div className="flex flex-col px-3">
               <p className="text-md font-medium ">
                 Addressing Sexual Harassment <br />
-                and Gender-Based Violence:
+                and Gender-Based Violence
               </p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const GenderEquality = () => {
             <div className="flex flex-col px-3 ">
               <p className="text-md font-medium ">
                 Creating Inclusive <br />
-                Workplaces:
+                Workplaces
               </p>
             </div>
           </div>

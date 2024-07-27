@@ -28,7 +28,7 @@ const Workplace = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium ">
-                Effective Communication <br />& Problem Solving:
+                Effective Communication <br />& Problem Solving
               </p>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Workplace = () => {
             <div className="lg:flex flex-col px-3">
               <p className="text-md font-medium ">
                 RIGHTS & <br />
-                RESPONSIBILITIES:
+                RESPONSIBILITIES
               </p>
             </div>
           </div>

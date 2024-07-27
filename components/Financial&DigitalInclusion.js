@@ -29,7 +29,7 @@ const Financial = () => {
             <div className="flex flex-col px-3">
               <p className="text-md font-medium ">
                 Financial Planning and <br />
-                Service Linkages:
+                Service Linkages
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Financial = () => {
             <div className="lg:flex flex-col px-3 ">
               <p className="text-md font-medium ">
                 Digital Financial <br />
-                Literacy:
+                Literacy
               </p>
             </div>
           </div>

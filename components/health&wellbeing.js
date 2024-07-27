@@ -29,7 +29,7 @@ const HealthWellbeing = () => {
             <div className="flex flex-col px-3">
               <p className="text-md font-medium">
                 Nutrition, Sanitation and <br />
-                Personal Hygiene:
+                Personal Hygiene
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ const HealthWellbeing = () => {
             <div className="flex flex-col px-3">
               <p className="text-md font-medium">
                 Stress Management and <br />
-                Mental Health:
+                Mental Health
               </p>
             </div>
           </div>
@@ -82,7 +82,7 @@ const HealthWellbeing = () => {
             <div className="flex flex-col px-3">
               <p className="text-md font-medium">
                 Primary Health <br />
-                Non-Communicable Diseases (NCDs):
+                Non-Communicable Diseases (NCDs)
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ const HealthWellbeing = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium pt-2">
-                Women’s Health and Wellbeing:
+                Women’s Health and Wellbeing
               </p>
             </div>
           </div>
