@@ -14,7 +14,7 @@ const OurMission = () => {
         <h2 className="lg:text-6xl text-3xl text-white">
           OUR <br /> MISSION
         </h2>
-        <p className="text-white lg:text-xl  text-3xl lg:w-9/12">
+        <p className="text-white lg:text-xl text-2xl lg:w-9/12">
           Enrich the lives of the formal and informal workforce by influencing
           key aspects of their wellbeing, like physical, emotional, financial, and
           environmental wellbeing. 
