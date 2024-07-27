@@ -130,8 +130,8 @@ const metaImage = "/ourStory/banner.png"
             alt="w-[40%]"
           />
           <Image
-            src="/ourStory/ourHistoryMob.png "
-            width={1000}
+            src="/ourStory/our_his_mob.png "
+            width={500}
             height={700}
             className="w-11/12 block lg:hidden mt-3"
             alt=""
