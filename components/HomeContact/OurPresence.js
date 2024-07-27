@@ -19,7 +19,7 @@ export default function WellBeing() {
         experience to make a meaningful impact.
       </p>
       <div>
-        <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/map.png" />
+        <img src="homePage/map.png" />
       </div>
     </div>
   );

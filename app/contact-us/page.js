@@ -22,7 +22,7 @@ const Page = () => {
           <div className="lg:ps-10 p-5 mt-10">
             <p className="text-black lg:text-6xl text-3xl">GET INVOLVED</p>
             <p className="text-black mt-4 text-xl mb-3">
-              Join the force behind the Wellbeing of the Workforces
+              Join the force behind the wellbeing of the workforce
             </p>
             <PartnerForm />
           </div>
@@ -74,7 +74,7 @@ const Page = () => {
             <div className="lg:flex text-xl ">
               <div className="lg:p-4 pt-5 pb-2 lg:pb-0">Email:</div>
               <Link href="mailto:info@upfrontglobal.com">
-                <div className="lg:pt-4 pb-2">info@upfrontglobal.com</div>
+                <div className="lg:pt-4 pb-2 ml-0">info@upfrontglobal.com</div>
               </Link>
             </div>
             <div className=" text-xl border-b border-gray-400 lg:mx-4"/>

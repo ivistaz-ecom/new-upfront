@@ -111,6 +111,13 @@ const Page = () => {
                 alt="Our Approach"
                 className="lg:mb-10 lg:w-3/4 w-full hidden lg:block"
               />
+              <Image
+              src="/whatWeDo/ourApproachMobile.png"
+              width={500}
+              height={500}
+              alt="Our Approach Mobile"
+              className="mb-10 lg:w-3/4 w-full block lg:hidden"
+            />
             </div>
             <p className="text-xl text-[#222222] lg:mt-10 lg:p-0">
               Upfront prioritises the wellbeing of both the formal and informal
@@ -138,13 +145,7 @@ const Page = () => {
               results, reinforcing its overall mission and vision for a healthy,
               wealthy, and thriving workforce.
             </p>
-            <Image
-              src="/whatWeDo/ourApproachMobile.png"
-              width={500}
-              height={500}
-              alt="Our Approach Mobile"
-              className="mb-10 lg:w-3/4 w-full block lg:hidden"
-            />
+            
           </div>
         </div>
 
@@ -155,7 +156,7 @@ const Page = () => {
         >
           <div className="lg:w-2/3 space-y-5 text-center container mx-auto">
             <h2 className="lg:text-6xl text-3xl">
-              BUILDING RESILIENCE OF THE<br /> WORKFORCE
+              BUILDING RESILIENCE OF THE<br className="hidden lg:block"/> WORKFORCE
             </h2>
             <p className="text-[#222222] text-xl">
               Upfront focuses on fostering individual resilience by building

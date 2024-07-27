@@ -4,32 +4,28 @@ import Link from "next/link";
 import {
   FaArrowRight,
   FaInstagram,
-  FaSquareXTwitter,
-  FaLinkedin,
-} from "react-icons/fa6";
-import { CiLinkedin } from "react-icons/ci";
-import { FaXTwitter } from "react-icons/fa6";
-import { SlSocialLinkedin } from "react-icons/sl";
-import { FaLinkedinIn } from "react-icons/fa";
-// import Link from "next/link";
+  FaTwitter,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <>
       <div className="bg-customBlack pt-6 pb-12 px-10">
-        <div className="max-w-screen-xl mx-auto flex flex-wrap justify-between">
-          <div className="mb-10 lg:mb-0">
+        <div className="container mx-auto">
+          <div className="flex justify-center mb-10 lg:mb-0">
             <Link href="/">
               <Image
                 src="/homePage/upfrontLogo.svg"
-                width={118}
+                width={70}
                 height={100}
                 alt="upfront logo"
+                className=""
               />
             </Link>
           </div>
-          <div className="flex flex-wrap gap-4 lg:gap-28 mt-6">
-            <ul className="text-white/60 text-xl mb-8 lg:mb-0">
+          <div className="flex flex-wrap justify-center lg:gap-10 mt-6">
+            <ul className="text-white/60 text-xl mb-0 w-full lg:w-auto">
               <h3 className="text-white text-2xl">About Us</h3>
               <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link
@@ -37,73 +33,48 @@ const Footer = () => {
                 className="flex gap-10 hover:text-red-600 group"
               >
                 <li className="flex-grow">Our Story</li>
-                <FaArrowRight className="mt-1 me-20 group-hover:animate-spin" />
+                <FaArrowRight className="mt-1 me-20" />
               </Link>
-
               <Link
                 href="/our-team"
-                className="flex gap-9 mt-2  hover:text-red-600 group"
+                className="flex mt-2 hover:text-red-600 group"
               >
                 <li className="flex-grow">Our Team</li>
-                <FaArrowRight className="mt-1 me-20 group-hover:animate-spin " />
+                <FaArrowRight className="mt-1 me-20" />
               </Link>
             </ul>
-            <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
-              <Link  href="/what-we-do"><h3 className="text-white text-2xl">What We Do</h3></Link>
-              <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
-              {/* <Link
+
+            <ul className="text-customGrayMd text-xl mt-1 w-full lg:w-auto">
+              <Link
                 href="/what-we-do"
-                className="flex gap-10 text-white/60  hover:text-red-600 group"
+                className="flex items-center justify-between text-white hover:text-red-600 group"
               >
                 <li className="flex-grow">What We Do</li>
-             a
-              </Link> */}
-            </ul>
-            <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
-              <h3 className="text-white text-2xl">Insights</h3>
-              <div className="lg:w-[220px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
-              <Link
-                href="/insights"
-                className="flex items-center justify-between text-white/60  hover:text-red-600 group "
-              >
-                <li className="flex-grow">Case Studies</li>
-                <FaArrowRight className="me-20 group-hover:animate-spin " />
               </Link>
+              <div className="lg:w-[160px] w-[300px] h-[1px] bg-customGrayMd lg:my-3 hidden lg:block"></div>
+            </ul>
 
-              <Link
-                href="/insights/#Stories (Blogs)"
-                className="flex items-center justify-between text-white/60 hover:text-red-600 group mt-2"
-              >
-                <li className="flex-grow">Stories (Blogs)</li>
-                <FaArrowRight className="me-20 group-hover:animate-spin" />
-              </Link>
-              
-              {/* <Link
-                href="/insights"
-                className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 group"
-              >
-                <li className="flex-grow"></li>
-                <FaArrowRight className="me-20 group-hover:animate-spin " />
-              </Link> */}
+            <ul className="text-customGrayMd text-xl mb-0 w-full lg:w-auto">
               <Link
                 href="/insights"
-                className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 group "
+                className="flex items-center justify-between text-white hover:text-red-600 group text-2xl"
               >
-                <li className="flex-grow me-3">News and Publications</li>
-                <FaArrowRight className="me-20 group-hover:animate-spin " />
+                <li className="flex-grow">Insights</li>
               </Link>
+              <div className="lg:w-[160px] w-[300px] h-[1px] bg-customGrayMd my-3 hidden lg:block"></div>
             </ul>
-            <ul className="text-white/60 text-xl">
+
+            <ul className="text-white/60 text-xl w-full lg:w-auto">
               <Link href="/contact-us">
-                <h3 className="text-white text-2xl">Contact Us</h3>
+                <h3 className="text-white text-2xl hover:text-red-600">Contact Us</h3>
               </Link>
               <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link href="mailto:Info@upfrontglobal.com">
-                <li className="mt-5  hover:text-red-600 group">
+                <li className="mt-5 hover:text-red-600 group">
                   info@upfrontglobal.com
                 </li>
               </Link>
-              <li className="flex pt-5 gap-5 text-3xl ">
+              <li className="flex pt-5 text-3xl gap-4">
                 <Link
                   target="_blank"
                   href="https://www.linkedin.com/showcase/upfrontcg/"
@@ -116,7 +87,7 @@ const Footer = () => {
                   href="https://twitter.com/UpfrontCG"
                   className="hover:text-white"
                 >
-                  <FaXTwitter />
+                  <FaTwitter />
                 </Link>
                 <Link
                   target="_blank"
@@ -132,7 +103,10 @@ const Footer = () => {
       </div>
       <div className="bg-customGray flex py-6 justify-center items-center">
         <p className="text-gray-400 text-center lg:p-0 px-1">
-        Upfront is a part of the Catalyst Group. <br className="lg:hidden block"/> Copyright 2024. All Rights Reserved. </p>
+          Upfront is a part of the Catalyst Group.{" "}
+          <br className="lg:hidden block" /> Copyright 2024. All Rights
+          Reserved.{" "}
+        </p>
       </div>
     </>
   );

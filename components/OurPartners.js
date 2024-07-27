@@ -53,7 +53,7 @@ const OurPartners = () => {
   return (
     <div className="bg-customLightGray lg:px-10 py-16">
       <h1 className="lg:text-6xl text-3xl text-center">
-        <span className="text-red-600 ">OUR</span> COLLABORATORS
+        <span className="text-red-600 ">OUR</span><br /> COLLABORATORS
       </h1>
       <img
         src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/arrow.svg"

@@ -904,31 +904,31 @@ export const HomeBanner = [
     imageUrl:
       '/homePage/home1.png',
     headline: 'Making Wellbeing a Reality for the Workforce',
-    desc: 'By working with workforces and systems',
+    desc: 'By Working with the Workforce and Systems',
   },
   {
     imageUrl:
       '/homePage/home2.png',
     headline: 'Making Wellbeing a Reality for the Workforce',
-    desc: 'By changing mindsets, behaviours and practices',
+    desc: 'By Changing Mindsets, Behaviours, and Practices',
   },
   {
     imageUrl:
       '/homePage/home3.png',
     headline: 'Making Wellbeing a Reality for the Workforce',
-    desc: 'By improving skills, financial security, processes and policies',
+    desc: 'By Improving Skills, Financial Security, Processes, and Policies',
   },
   {
     imageUrl:
       '/homePage/home4.png',
     headline: 'Making Wellbeing a Reality for the Workforce',
-    desc: 'By building agency, ensuring voices and choices',
+    desc: 'By Building Agency, Ensuring Voices and Choices',
   },
   {
     imageUrl:
       '/homePage/home5.png',
     headline: 'Making Wellbeing a Reality for the Workforce',
-    desc: 'By establishing partnerships and collaborations',
+    desc: 'By Establishing Partnerships and Collaborations',
   },
 ]
 
