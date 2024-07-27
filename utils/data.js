@@ -852,19 +852,19 @@ export const OurKeyCommunities = [
     {
       id: 2,
       imageurl: "/whatWeDo/factoryWorkers.png",
-      title :"Factory Workers",
+      title :"Factory Workforce",
       
     },
     {
       id: 3,
       imageurl: "/whatWeDo/frontlineHealthWorkers.png",
-      title :"Frontline Health Workers",
+      title :"Frontline Health Workforce",
     
     },
     {
       id: 4,
       imageurl : "/whatWeDo/zomato.png",
-      title :"Gig Workers",
+      title :"Gig Workforce",
       
     },
     {
@@ -876,19 +876,19 @@ export const OurKeyCommunities = [
     {
       id: 6,
       imageurl: "/whatWeDo/garbage.png",
-      title :"Sanitation Workers",
+      title :"Sanitation Workforce",
     
     },
     {
       id: 7,
       imageurl : "/whatWeDo/farm.png",
-      title :"Plantation Workers",
+      title :"Plantation Workforce",
       
     },
     {
       id: 8,
       imageurl: "/whatWeDo/smilefarmer.png",
-      title :"Construction Workers",
+      title :"Construction Workforce",
       
     },
     {

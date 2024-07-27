@@ -32,7 +32,7 @@ const SocialProtection = () => {
           </div>
           <p className="pt-5">
             Social protection schemes ensure a safety net for the vulnerable
-            workforce. By improving awareness and access, we ensure that workers
+            workforce. By improving awareness and access, we ensure that workforce
             do not fall through the cracks and receive the assistance they need
             when facing challenges. Through awareness campaigns, workshops, and
             information sessions, we empower the workforce with knowledge about

@@ -129,10 +129,10 @@ const metaImage = "/ourStory/banner.png"
             className=" hidden lg:block"
             alt="w-[40%]"
           />
-          <Image
-            src="/ourStory/our_his_mob.png "
+          <img
+            src="https://beta.upfront.global/wp-content/uploads/2024/07/our_his_mob.png"
             width={500}
-            height={700}
+            height={600}
             className="w-11/12 block lg:hidden mt-3"
             alt=""
           />

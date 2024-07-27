@@ -64,7 +64,7 @@ const Content = React.forwardRef((props, ref) => {
                   className="flex flex-col justify-center items-center text-center h-[200px]"
                   data-aos="zoom-in"
                 >
-                  <img src={item.imageUrl} className="h-[80px] w-[80px] object-contain mb-4" />
+                  <img src={item.imageUrl} className="h-[80px] w-[100px] object-contain mb-4" />
                   <p className="text-white text-1xl font-light" dangerouslySetInnerHTML={{ __html: item.headline }} />
                 </div>
               </div>
