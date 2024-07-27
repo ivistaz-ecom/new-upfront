@@ -10,16 +10,13 @@ const Workplace = () => {
           width={600}
           height={300}
           alt=""
-          className="lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-10 md:w-full xl:w-[500px] h-auto sm:w-auto"
+          className="w-[900px]"
         />
       </div>
 
-      <div className="lg:flex lg:mt-20">
-        <div className="lg:w-1/2  bg-[#FFE8EC] p-4 lg:pt-20">
-          <p className="text-4xl bold font-normal pb-5 pt-3 mt-10">
-            Workplace/ Social Dialogues
-          </p>
-
+      <div className="lg:flex ">
+        <div className="lg:w-1/2 p-4">
+        
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
@@ -46,8 +43,8 @@ const Workplace = () => {
             take on leadership roles in promoting positive change.
           </p>
         </div>
-        <div className="lg:w-1/2 bg-[#FFE8EC] p-4 lg:pt-48">
-          <div className="flex flex-row ">
+        <div className="lg:w-1/2">
+          <div className="flex flex-row pt-4">
             <div className="flex flex-col">
               <Image
                 src="/whatWeDo/tab-img-12.svg"
@@ -57,7 +54,7 @@ const Workplace = () => {
                 className="w-14"
               />
             </div>
-            <div className="lg:flex flex-col px-3 ">
+            <div className="lg:flex flex-col px-3">
               <p className="text-md font-medium ">
                 RIGHTS & <br></br> RESPONSIBILITIES:
               </p>

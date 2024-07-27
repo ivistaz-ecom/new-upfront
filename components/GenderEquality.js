@@ -10,16 +10,13 @@ const GenderEquality = () => {
           width={600}
           height={300}
           alt=""
-          className="lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-10 md:w-full xl:w-[500px] h-auto sm:w-auto"
+          className="w-[900px]"
         />
       </div>
 
-      <div className="lg:flex lg:mt-20">
-        <div className="lg:w-1/2 w-full bg-[#FFE8EC] p-4 lg:pt-20">
-          <p className="text-4xl bold font-normal pb-5 pt-3 mt-10">
-            Gender Equality, Inclusion, and Diversity at Workplaces
-          </p>
-
+      <div className="lg:flex">
+        <div className="lg:w-1/2 w-full p-4">
+         
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
@@ -46,7 +43,7 @@ const GenderEquality = () => {
             accountability and support for the victims.
           </p>
         </div>
-        <div className="lg:w-1/2 bg-[#FFE8EC] p-4 lg:pt-56">
+        <div className="lg:w-1/2  p-4">
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image

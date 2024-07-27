@@ -20,7 +20,7 @@ const InsightsBanner = () => {
       />
             <div className="lg:bg-[url('/insights/banner.png')] bg-[url('/insights/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col  pb-8">
               
-                <h1 className="text-white text-7xl mt-auto ps-16">INSIGHTS</h1>
+                <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">INSIGHTS</h1>
             </div>
 
         </>

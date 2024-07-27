@@ -104,54 +104,34 @@
 
 // export default OurKeyCommunities
 
+'use client'
 import React from "react";
 import Image from "next/image";
-const OurKeyCommunities = () => {
+import { OurKeyCommunities } from "@utils/data";
+
+const ourKeyCommunities = () => {
   return (
     <div className="space-y-5 lg:px-10 mb-10 text-center">
       <h2 className="lg:text-6xl text-3xl mb-10">
         KEY <br /> COMMUNITIES
       </h2>
 
-      <div className="flex lg:flex-row flex-col justify-center lg:gap-36 items-center gap-y-10">
-        <div className="">
-          <Image
-            src="/whatWeDo/streetVendors.png"
-            width={300}
-            height={300}
-            alt=""
-          />
-          <p className="text-xl">Street Vendors</p>
-        </div>
-
-        <div className="">
-          <Image
-            src="/whatWeDo/factoryWorkers.png"
-            width={300}
-            height={300}
-            alt=""
-          />
-          <p className="text-xl">Factory Workers</p>
-        </div>
-        <div className="">
-          <Image
-            src="/whatWeDo/frontlineHealthWorkers.png"
-            width={300}
-            height={300}
-            alt=""
-          />
-          <p className="text-xl">Frontline Health Workers</p>
-        </div>
+      <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-4 mx-auto container">
+        {OurKeyCommunities.map((item) => (
+          <div key={item.id} className="flex flex-col items-center">
+            <Image
+              src={item.imageurl}
+              width={200}
+              height={300}
+              alt={item.title}
+              className="object-cover"
+            />
+            <p className="text-xl mt-2">{item.title}</p>
+          </div>
+        ))}
       </div>
-
-      <div className="text-center">
-         <p className="text-xl mt-7">
-           And Other Workforces Including Plantation Workers, Domestic Workers,
-           Gig Workers Etc.
-         </p>
-       </div>
     </div>
   );
 };
 
-export default OurKeyCommunities;
+export default ourKeyCommunities;

@@ -10,16 +10,13 @@ const SocialProtection = () => {
           width={600}
           height={300}
           alt=""
-          className="lg:w-1/3 lg:absolute lg:ms-10 lg:-mt-28 md:w-full xl:w-[500px] h-auto sm:w-auto" 
+          className="w-[900px]" 
         />
       </div>
 
-      <div className="lg:flex lg:mt-20">
-        <div className="lg:w-1/2  bg-[#FFE8EC] p-4 lg:pt-20">
-          <p className="text-4xl bold font-normal pb-5 pt-3 lg:mt-10">
-            Social Protection
-          </p>
-
+      <div className="lg:flex ">
+        <div className="lg:w-1/2  p-4">
+         
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
@@ -43,7 +40,7 @@ const SocialProtection = () => {
             available support services and how to access them.
           </p>
         </div>
-        <div className="lg:w-1/2 bg-[#FFE8EC] p-4 lg:pt-48">
+        <div className="lg:w-1/2 p-4">
           <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
@@ -69,7 +66,7 @@ const SocialProtection = () => {
           </p>
         </div>
       </div>
-      <div className=" bg-[#FFE8EC] p-4">
+      <div className="  p-4">
         <div className="flex flex-row ">
           <div className="flex flex-col">
             <Image

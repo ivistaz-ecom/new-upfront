@@ -60,7 +60,7 @@ const metaImage = "/ourStory/banner.png"
      <Seo title={title} description={description} path={path} metaImage={metaImage} />  
       <div className="lg:bg-[url('/ourStory/banner.png')] bg-[url('/ourStory/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col pb-8">
        
-        <h1 className="text-white text-7xl mt-auto lg:ps-16 ps-10">
+        <h1 className="text-white lg:text-7xl text-5xl mt-auto lg:ps-16 ps-10">
           OUR <br /> STORY
         </h1>
       </div>

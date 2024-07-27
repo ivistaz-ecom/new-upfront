@@ -839,3 +839,201 @@ export const impact = [
     title: 'Street Vendors',
   },
 ]
+
+
+
+export const OurKeyCommunities = [
+    {
+      id: 1,
+      imageurl : "/whatWeDo/streetVendors.png",
+      title :"Street Vendors",
+      
+    },
+    {
+      id: 2,
+      imageurl: "/whatWeDo/factoryWorkers.png",
+      title :"Factory Workers",
+      
+    },
+    {
+      id: 3,
+      imageurl: "/whatWeDo/frontlineHealthWorkers.png",
+      title :"Frontline Health Workers",
+    
+    },
+    {
+      id: 4,
+      imageurl : "/whatWeDo/zomato.png",
+      title :"Gig Workers",
+      
+    },
+    {
+      id: 5,
+      imageurl: "/whatWeDo/fishers.png",
+      title :"Fish Vendors",
+      
+    },
+    {
+      id: 6,
+      imageurl: "/whatWeDo/garbage.png",
+      title :"Sanitation Workers",
+    
+    },
+    {
+      id: 7,
+      imageurl : "/whatWeDo/farm.png",
+      title :"Plantation Workers",
+      
+    },
+    {
+      id: 8,
+      imageurl: "/whatWeDo/smilefarmer.png",
+      title :"Construction Workers",
+      
+    },
+    {
+      id: 9,
+      imageurl: "/whatWeDo/eggs.png",
+      title :"Farmers",
+    
+    },
+]
+
+export const HomeBanner = [
+  {
+    imageUrl:
+      '/homePage/home1.png',
+    headline: 'Making Wellbeing Reality for Workforces',
+    desc: 'By working with workforces and systems',
+  },
+  {
+    imageUrl:
+      '/homePage/home2.png',
+    headline: 'Making Wellbeing Reality for Workforces',
+    desc: 'By changing mindsets, behaviours and practices',
+  },
+  {
+    imageUrl:
+      '/homePage/home3.png',
+    headline: 'Making Wellbeing Reality for Workforces',
+    desc: 'By improving skills, financial security, processes and policies',
+  },
+  {
+    imageUrl:
+      '/homePage/home4.png',
+    headline: 'Making Wellbeing Reality for Workforces',
+    desc: 'By building agency, ensuring voices and choices',
+  },
+  {
+    imageUrl:
+      '/homePage/home5.png',
+    headline: 'Making Wellbeing Reality for Workforces',
+    desc: 'By establishing partnerships and collaborations',
+  },
+]
+
+export const HomeWhoWeAre = [
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/WhoWeAre/whoWe-1.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/WhoWeAre/whoWe-2.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/WhoWeAre/whoWe-3.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/WhoWeAre/whoWe-4.png',
+  },
+]
+
+export const HomeCount = [
+  { count: '582405', title: 'Factory Workforce', border: '' },
+  { count: '1687', title: 'Frontline Health Workforce', border: '' },
+  { count: '40830', title: 'Street Vendor Workforce', border: '' },
+  { count: '65032', title: 'Women Workforce', border: '' },
+]
+
+export const HomeBrands = [
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/brands/Brands-1.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/brands/Brands-2.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/brands/Brands-3.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/brands/Brands-4.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/brands/Brands-5.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/brands/Brands-6.png',
+  },
+]
+
+export const ThematicAreas = [
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-6.svg',
+    headline: 'Agency Building',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-3.svg',
+    headline: 'Preventive and promotive health',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-1.svg',
+    headline: 'Financial and Digital Inclusion',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-2.svg',
+    headline: 'Social Protection',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-7.svg',
+    headline: 'Gender Equality & Equity',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-4.svg',
+    headline: 'Just Transition & Climate actions',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-5.svg',
+    headline: 'Safe & sustainable accommodation',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-9.svg',
+    headline: 'Career Progression For Women',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-8.svg',
+    headline: 'Safe & Sustainable Workplaces',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-7.svg',
+    headline: 'Inclusive Workplaces',
+  },
+]

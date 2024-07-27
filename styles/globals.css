@@ -49,6 +49,27 @@ body {
   border-left: 20px solid #f40f34;
 }
 
+/* Custom CSS for the triangle */
+.triangle-right {
+  position: relative;
+  background: #E8E8E8;
+}
+
+.triangle-right:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+  border-left: 200px solid white;
+}
+
+
+
+
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -224,3 +245,23 @@ body {
 }
   
 
+.tab-button {
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
+  width: 190px !important;
+}
+
+.tab-button:hover {
+  background-color: red;
+  color: white;
+}
+
+.tab-button.active {
+  background-color: red;
+  color: white;
+}

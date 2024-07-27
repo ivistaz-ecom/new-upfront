@@ -16,7 +16,7 @@ const Page = () => {
   const ourApproachRef = useRef(null);
   const resilienceRef = useRef(null);
   const keyCommunitiesRef = useRef(null);
-  const thematicAreasRef = useRef(null);
+  const thematicAreasRef = useRef(true);
   const impactRef = useRef(null);
 
   const scrollToSection = (ref) => {
@@ -66,8 +66,8 @@ const Page = () => {
       <Header />
       <Seo {...seoProps} />
       <div>
-        <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col pb-8">
-          <h1 className="text-white text-7xl mt-auto ps-16">
+        <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[300px] h-[300px] flex flex-col pb-8">
+          <h1 className="text-white lg:text-7xl text-5xl mt-auto lg:ps-16 ps-7">
             WHAT <br /> WE DO
           </h1>
         </div>
@@ -186,7 +186,7 @@ const Page = () => {
         </div>
 
         <div>
-          <ThematicMobile />
+          {/* <ThematicMobile /> */}
         </div>
 
         <div id="thematic-areas" ref={thematicAreasRef}>

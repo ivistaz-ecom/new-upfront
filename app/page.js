@@ -1,16 +1,17 @@
 import CaseStudy from "@components/CaseStudy";
 import Header from "@components/Header";
-import CarouselScreen from "@components/CarouselScreen";
-import ImpactStories from "@components/ImpactStories";
+// import CarouselScreen from "@components/CarouselScreen";
+// import ImpactStories from "@components/ImpactStories";
 import OurPartners from "@components/OurPartners";
-import OurPresence from "@components/OurPresence";
-import OurReach from "@components/OurReach";
-import ThematicAreas from "@components/ThematicAreas";
-import WhatWeDo from "@components/WhatWeDo";
-import WhoAreWe from "@components/WhoAreWe";
-import { homeBannerCarousel } from "@utils/data";
-import WhoAreWeMobile from "@components/WhoWeAreMobile";
+// import OurPresence from "@components/OurPresence";
+// import OurReach from "@components/OurReach";
+// import ThematicAreas from "@components/ThematicAreas";
+// import WhatWeDo from "@components/WhatWeDo";
+// import WhoAreWe from "@components/WhoAreWe";
+// import { homeBannerCarousel } from "@utils/data";
+// import WhoAreWeMobile from "@components/WhoWeAreMobile";
 import Seo from "../components/SeoComponents/Seo";
+import HomeContact from "../components/HomeContact/Banner"
 export default function Home() {
   // seo
   const title =
@@ -28,7 +29,8 @@ export default function Home() {
         path={path}
         metaImage={metaImage}
       />
-      <div className="relative">
+      <HomeContact/>
+      {/* <div className="relative">
         <CarouselScreen details={homeBannerCarousel} />
       </div>
       <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-7 mt-6 tracking-wide">
@@ -58,8 +60,8 @@ export default function Home() {
       <OurPresence />
       <ThematicAreas />
       {/* <ImpactStories /> */}
-      <CaseStudy />
-      <OurPartners />
+      {/* <CaseStudy />
+      <OurPartners /> */} 
     </>
   );
 }

@@ -3,7 +3,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import Image from 'next/image'
-
+import { HomeBrands } from '@data'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
@@ -52,115 +52,22 @@ const OurPartners = () => {
 
   return (
     <div className="bg-customLightGray lg:px-10 py-16">
-      <h1 className="lg:text-6xl text-3xl mb-10 lg:px-0 px-8 text-center" >
+      <h1 className="lg:text-6xl text-3xl text-center">
         <span className="text-red-600 ">OUR</span> COLLABORATORS
       </h1>
+      <img
+        src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/arrow.svg"
+        className="mx-auto py-4"
+      />
       <div className="lg:ps-11 ps-24 pe-0 container mx-auto">
         <Slider className="" {...settings}>
-          <div>
-            <Image
-              src="/homePage/ourPartner1.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner2.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner3.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner4.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner5.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner6.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner7.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner8.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner9.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner10.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner11.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner12.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src="/homePage/ourPartner13.png"
-              width={200}
-              height={100}
-              alt=""
-            />
-          </div>
+        {HomeBrands.map((items, index) => (
+            <div className="h-[150px] justify-center items-center p-4">
+              <div className="lg:w-[100%]" key={index} data-aos="zoom-in">
+                <img src={items.imageUrl} className="" />
+              </div>
+            </div>
+          ))}
         </Slider>
       </div>
     </div>
