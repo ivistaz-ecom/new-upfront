@@ -160,8 +160,8 @@ const PartnerForm = ({ subject }) => {
                 placeholder="Enter Name"
                 value={formData.firstname}
                 onChange={handleChange}
-                minLength={10}
-                maxLength={15}
+                // minLength={10}
+                maxLength={20}
               />
               {errors.firstname && <div className="invalid-feedback text-red-500">{errors.firstname}</div>}
             </div>

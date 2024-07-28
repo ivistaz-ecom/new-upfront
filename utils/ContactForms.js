@@ -160,7 +160,7 @@ const ContactForm = ({ subject }) => {
   return (
     <div className="bg-[#4A4A4A] py-1 px-5 mt-5 lg:w-1/2 container">
       {formVisible ? (
-        <><p className="text-white contact-text">All fileds are mandatory<span className='text-red-600'>*</span></p>
+        <>  
           <p className="text-white mt-3">
             If you would like to explore an opportunity to work with Upfront,
             <br />
@@ -181,7 +181,7 @@ const ContactForm = ({ subject }) => {
                   placeholder="Enter Name"
                   value={formData.firstname}
                   onChange={handleChange}
-                  maxLength={15}
+                  maxLength={20}
                 />
                 {errors.firstname && (
                   <div className="invalid-feedback text-red-500">{errors.firstname}</div>
