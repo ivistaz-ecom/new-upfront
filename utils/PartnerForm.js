@@ -152,7 +152,8 @@ const PartnerForm = ({ subject }) => {
       <div className="form-bg mb-5 bg-[#4A4A4A] lg:w-1/2 w-full container">
         {formVisible ? (
           <form onSubmit={handleSubmit} encType="multipart/form-data" className="px-5 py-2 gap-4">
-            <div className="mb-3 border mt-7">
+            <p className='text-white text-sm contact-text'>All fileds are mandatory<span className='text-red-600'>*</span></p>
+            <div className="mb-3 border mt-">
               <input
                 name="firstname"
                 className={`form-control ${errors.firstname ? 'is-invalid' : ''} w-full p-2`}
