@@ -82,12 +82,12 @@ const CaseStudiesPosts = ({ slug }) => {
                 dangerouslySetInnerHTML={{ __html: post.content.rendered }}
               />
               <div className="pt-5 pb-10">
-                <Link href="/insights">
+                <Link href="/insights/case-studies">
                   <button
                     type="button"
                     className="focus:outline-none w-44 text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:ring-red-300 font-normal text-md px-4 py-4 me-4 mb-4 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
                   >
-                    View All Stories
+                    View All Case Studies
                   </button>
                 </Link>
               </div>

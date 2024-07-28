@@ -75,7 +75,7 @@ const BlogComponents = () => {
                     className="fs-5 mb-3 mx-3 mt-5 p-1 post-content"
                   ></div>
                   <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
-                    <Link href={`/insights/blog/${post.slug}`} className="px-7">
+                    <Link href={`/insights/blogs/${post.slug}`} className="px-7">
                       Read More
                     </Link>
                   </Button>
