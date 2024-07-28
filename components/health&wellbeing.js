@@ -5,8 +5,8 @@ const HealthWellbeing = () => {
   return (
     <>
       <div className="">
-        <Image
-          src="/whatWeDo/tab-img.png"
+        <img
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/tab-imags/tab-img.png"
           width={1000}
           height={300}
           alt=""

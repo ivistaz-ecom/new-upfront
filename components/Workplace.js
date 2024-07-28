@@ -5,8 +5,8 @@ const Workplace = () => {
   return (
     <>
       <div className="">
-        <Image
-          src="/whatWeDo/tab-5.png"
+        <img
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/tab-imags/tab-5.png"
           width={1000}
           height={300}
           alt=""

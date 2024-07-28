@@ -32,10 +32,12 @@ const PartnerForm = ({ subject }) => {
   const notAllowedDomains = ['test.com', 'sample.com', 'example.com', 'testing.com'];
 
   const customErrors = {
-    email: 'Please enter a valid email address.',
-    emailDomain: 'This email domain is not allowed.',
+    email: 'Please enter a valid email address',
+    emailDomain: 'This email domain is not allowed',
     contactNo: 'Please enter only numbers.',
-    firstname: 'Name must be between 10 to 15 characters.',
+    firstname: 'Please enter your name',
+    contactNoEmpty: 'Please enter your mobile number',
+    emailEmpty: 'Please enter your email',
   };
 
   const isValidEmail = (email) => {
@@ -47,8 +49,17 @@ const PartnerForm = ({ subject }) => {
     const { name, value } = e.target;
     const newErrors = { ...errors };
 
-    if (name === 'contactNo' && !/^\d+$/.test(value)) {
-      newErrors.contactNo = customErrors.contactNo;
+    if (name === 'contactNo') {
+      if (!/^\d+$/.test(value)) {
+        newErrors.contactNo = customErrors.contactNo;
+      } else {
+        delete newErrors.contactNo;
+      }
+      if (!value) {
+        newErrors.contactNo = customErrors.contactNoEmpty;
+      } else {
+        delete newErrors.contactNo;
+      }
     } else if (name === 'email') {
       if (!emailRegex.test(value)) {
         newErrors.email = customErrors.email;
@@ -57,8 +68,18 @@ const PartnerForm = ({ subject }) => {
       } else {
         delete newErrors.email;
       }
+      if (!value) {
+        newErrors.email = customErrors.emailEmpty;
+      } else {
+        delete newErrors.email;
+      }
     } else if (name === 'firstname') {
       if (value.length < 10 || value.length > 15) {
+        newErrors.firstname = customErrors.firstname;
+      } else {
+        delete newErrors.firstname;
+      }
+      if (!value) {
         newErrors.firstname = customErrors.firstname;
       } else {
         delete newErrors.firstname;
@@ -75,6 +96,24 @@ const PartnerForm = ({ subject }) => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Check for empty fields before submission
+    const newErrors = { ...errors };
+    if (!formData.firstname) {
+      newErrors.firstname = customErrors.firstname;
+    }
+    if (!formData.contactNo) {
+      newErrors.contactNo = customErrors.contactNoEmpty;
+    }
+    if (!formData.email) {
+      newErrors.email = customErrors.emailEmpty;
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       const formDataToSend = new FormData();
       for (const key in formData) {
@@ -84,7 +123,7 @@ const PartnerForm = ({ subject }) => {
       formDataToSend.append('applyingfor', newPosition);
 
       const response = await axios.post(
-        `https://beta.upfront.global/wp-json/contact-form-7/v1/contact-forms/157/feedback`,
+        'https://beta.upfront.global/wp-json/contact-form-7/v1/contact-forms/157/feedback',
         formDataToSend,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );
@@ -112,7 +151,7 @@ const PartnerForm = ({ subject }) => {
     <>
       <div className="form-bg mb-5 bg-[#4A4A4A] lg:w-1/2 w-full container">
         {formVisible ? (
-          <form onSubmit={handleSubmit} encType="multipart/form-data" className='px-5 py-2 gap-4'>
+          <form onSubmit={handleSubmit} encType="multipart/form-data" className="px-5 py-2 gap-4">
             <div className="mb-3 border mt-7">
               <input
                 name="firstname"

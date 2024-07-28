@@ -18,14 +18,9 @@ const ContactForm = ({ subject }) => {
   const [positions, setPositions] = useState([]);
   const [newPosition, setNewPosition] = useState("");
 
-  const jobType = [
-    // { id: "1", name: "Part Time" },
-    { id: "2", name: "Full Time" },
-  ];
+  const jobType = [{ id: "2", name: "Full Time" }];
   const applying = [
     { id: "1", position: "Implementation Specialist as Network Consultant (NC)" },
-    // { id: "2", position: "Project B" },
-    // { id: "3", position: "Project C" },
   ];
 
   const [formData, setFormData] = useState({
@@ -45,23 +40,16 @@ const ContactForm = ({ subject }) => {
     setNewPosition(e.target.value);
   };
 
-  const isBlank = (str) => {
-    return !str.trim();
-  };
-
   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-  const notAllowedDomains = [
-    "test.com",
-    "sample.com",
-    "example.com",
-    "testing.com",
-  ];
+  const notAllowedDomains = ["test.com", "sample.com", "example.com", "testing.com"];
 
   const customErrors = {
     email: "Please enter a valid email address.",
     emailDomain: "This email domain is not allowed.",
     contactNo: "Please enter only numbers.",
-    firstname: "Firstname must be between 10 to 15 characters.",
+    firstname: "Please enter your name",
+    contactNoEmpty: "Please enter your mobile number",
+    emailEmpty: "Please enter your email",
   };
 
   function isValidEmail(email) {
@@ -83,8 +71,6 @@ const ContactForm = ({ subject }) => {
       } else {
         delete newErrors.email;
       }
-    } else if (name === "firstname" && (value.length < 10 || value.length > 15)) {
-      newErrors.firstname = customErrors.firstname;
     } else {
       delete newErrors[name];
     }
@@ -108,8 +94,7 @@ const ContactForm = ({ subject }) => {
         setFileErrors(true);
         setHideSubmitButton(true);
         setErrors({
-          resume:
-            "Invalid file type. Allowed types are PDF, DOC, DOCX, RTF, and TXT.",
+          resume: "Invalid file type. Allowed types are PDF, DOC, DOCX, RTF, and TXT.",
         });
       }
     }
@@ -117,6 +102,25 @@ const ContactForm = ({ subject }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const newErrors = {};
+
+    if (!formData.firstname.trim()) {
+      newErrors.firstname = customErrors.firstname;
+    }
+    if (!formData.contactNo.trim()) {
+      newErrors.contactNo = customErrors.contactNoEmpty;
+    }
+    if (!formData.email.trim()) {
+      newErrors.email = customErrors.emailEmpty;
+    }
+
+    // Check if there are any errors
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       const formDataToSend = new FormData();
       for (const key in formData) {
@@ -158,19 +162,21 @@ const ContactForm = ({ subject }) => {
       {formVisible ? (
         <>
           <p className="text-white mt-5">
-            If you would like to explore an opportunity to work with Upfront,<br/>
+            If you would like to explore an opportunity to work with Upfront,
+            <br />
             please fill up this form and submit
           </p>
           <div className="mt-5">
             <form
               className="grid grid-cols-1 md:grid-cols-3"
               encType="multipart/form-data"
+              onSubmit={handleSubmit}
             >
               <div className="mb-3">
                 <input
                   name="firstname"
                   className={`form-select border border-gray-500 px-3 w-full py-2${
-                    errors.firstname ? "is-invalid" : ""
+                    errors.firstname ? " is-invalid" : ""
                   }`}
                   placeholder="Enter Name"
                   value={formData.firstname}
@@ -265,8 +271,8 @@ const ContactForm = ({ subject }) => {
                   aria-label="Upload"
                 />
                 <p className="text-white" style={{ lineHeight: "16px", fontSize: "12px" }}>
-                  Complete your job application by uploading your resume or CV.
-                  Upload either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.
+                  Complete your job application by uploading your resume or CV. Upload
+                  either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.
                 </p>
                 {errors.resume && (
                   <div className="invalid-feedback text-red-500">{errors.resume}</div>
@@ -282,10 +288,8 @@ const ContactForm = ({ subject }) => {
               </div>
               <div className="col-span-1 md:col-span-3">
                 <button
-                  type="button"
+                  type="submit"
                   className="focus:outline-none w-full md:w-44 rounded-sm text-white bg-red-500 hover:bg-red-600 font-normal text-md px-2 py-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
-                  onClick={handleSubmit}
-                  disabled={hideSubmitButton}
                 >
                   Submit
                 </button>
@@ -296,9 +300,7 @@ const ContactForm = ({ subject }) => {
       ) : (
         <div className="mt-5 text-center mb-5 ">
           <h3 className="fs-4 text-white">Your application has been received.</h3>
-          <h3 className="fs-4 text-white">
-          We will contact you shortly.
-          </h3>
+          <h3 className="fs-4 text-white">We will contact you shortly.</h3>
         </div>
       )}
     </div>

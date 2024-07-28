@@ -72,7 +72,7 @@ const Page = () => {
 
           
             <div className="lg:flex text-xl ">
-              <div className="lg:px-1 ms-3 pt-5 pb-2 lg:pb-0">Email:</div>
+              <div className="lg:px-1 lg:ms-3 pt-5 pb-2 lg:pb-0">Email:</div>
               <Link href="mailto:info@upfrontglobal.com">
                 <div className="lg:pt-5 pb-2 ml-0">info@upfrontglobal.com</div>
               </Link>

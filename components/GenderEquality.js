@@ -5,8 +5,8 @@ const GenderEquality = () => {
   return (
     <>
       <div className="">
-        <Image
-          src="/whatWeDo/tab-2.png"
+        <img
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/tab-imags/tab-2.png"
           width={1000}
           height={300}
           alt=""
