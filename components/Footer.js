@@ -15,13 +15,13 @@ const Footer = () => {
         <div className="container mx-auto">
           <div className="flex justify-center mb-10 lg:mb-0">
             <Link href="/">
-              <Image
+              {/* <Image
                 src="/homePage/upfrontLogo.svg"
                 width={70}
                 height={100}
                 alt="upfront logo"
                 className=""
-              />
+              /> */}
             </Link>
           </div>
           <div className="flex flex-wrap justify-center lg:gap-10 mt-6">

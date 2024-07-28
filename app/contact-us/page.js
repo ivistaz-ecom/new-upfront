@@ -61,20 +61,20 @@ const Page = () => {
               <div className="mt-3">
                 <div className="text-xl">Bengaluru:</div>
                 <div>
-                  #25, 1st Main, AECS Layout, Ashwath Nagar, Bengaluru, 560094
+                  #25, 1st Main, AECS Layout, Ashwath Nagar, Bengaluru - 560094
                 </div>
               </div>
               <div className="mt-4 text-xl">
                 <span className="text-xl">Delhi:</span>
-                <div>A-10, Second Floor, Green Park, New Delhi, 110016</div>
+                <div>A-10, Second Floor, Green Park, New Delhi - 110016</div>
               </div>
             </div>
 
           
             <div className="lg:flex text-xl ">
-              <div className="lg:p-4 pt-5 pb-2 lg:pb-0">Email:</div>
+              <div className="lg:px-1 ms-3 pt-5 pb-2 lg:pb-0">Email:</div>
               <Link href="mailto:info@upfrontglobal.com">
-                <div className="lg:pt-4 pb-2 ml-0">info@upfrontglobal.com</div>
+                <div className="lg:pt-5 pb-2 ml-0">info@upfrontglobal.com</div>
               </Link>
             </div>
             <div className=" text-xl border-b border-gray-400 lg:mx-4"/>

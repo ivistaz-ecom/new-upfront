@@ -296,9 +296,9 @@ const ContactForm = ({ subject }) => {
         </>
       ) : (
         <div className="mt-5 text-center mb-5 ">
-          <h3 className="fs-4 text-white">Thank you for your interest.</h3>
+          <h3 className="fs-4 text-white">Your application has been received.</h3>
           <h3 className="fs-4 text-white">
-            We will get in touch with you as soon as possible.
+          We will contact you shortly.
           </h3>
         </div>
       )}

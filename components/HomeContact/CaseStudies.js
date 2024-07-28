@@ -70,7 +70,7 @@ const CaseStudy = () => {
 
                     <Link
                       href={`/insights/case-studies/${post.slug}`}
-                      className="text-[#F40F34] text-start border border-[#9a9a9a] p-4 justify-between flex"
+                      className="text-[#F40F34] text-start border border-[#9a9a9a] p-4 justify-between flex hover:bg-black hover:text-white"
                     >
                       Read Case Study
                       <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/btnArrow.svg" />

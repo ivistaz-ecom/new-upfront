@@ -8,7 +8,7 @@ const Content = React.forwardRef((props, ref) => {
   return (
     <div className="bg-black py-12">
       <h1 className="lg:text-6xl text-3xl text-center text-white">
-        <span className='text-red-600'>FOCUS</span> AREAS
+        <span className='text-red-600'>FOCUS</span><br /> AREAS
       </h1>
       <img
         src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/arrow.svg"

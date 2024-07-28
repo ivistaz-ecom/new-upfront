@@ -29,7 +29,7 @@ const page = () => {
 
   const getActiveTab = (tab) => {
     switch (tab) {
-      case "Why Workforce Wellbeing?":
+      case "Why Workforce Wellbeing":
         scrollToSection(worforceRef);
         break;
       case "We Believe":

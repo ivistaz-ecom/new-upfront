@@ -438,7 +438,7 @@ export const ourWorkTabs = [
 export const ourStoryTabs = [
   {
     id: 1,
-    tab: 'Why Workforce Wellbeing?',
+    tab: 'Why Workforce Wellbeing',
   },
   {
     id: 2,
@@ -994,12 +994,12 @@ export const ThematicAreas = [
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-3.svg',
-    headline: 'Preventive and <br> Promotive Health',
+    headline: 'Preventive & <br> Promotive Health',
   },
   {
     imageUrl:
       'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-1.svg',
-    headline: 'Financial and Digital Inclusion',
+    headline: 'Financial & <br> Digital Inclusion',
   },
   {
     imageUrl:

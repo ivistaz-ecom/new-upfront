@@ -138,7 +138,7 @@ const Header = () => {
                     <li>
                       <Link
                         href="/our-story"
-                        className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block text-md px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Our Story
                       </Link>
@@ -146,7 +146,7 @@ const Header = () => {
                     <li>
                       <Link
                         href="/our-team"
-                        className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block text-md px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Our Team
                       </Link>
@@ -163,12 +163,67 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/insights"
-                  className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:  dark:hover:bg-gray-700  md:dark:hover:bg-transparent"
+                <button
+                  id="dropdownInsightsLink"
+                  data-dropdown-toggle="dropdownInsights"
+                  className={`flex items-center justify-between w-full py-2 px-3  md:hover:bg-transparent md:p-0 md:w-auto ${
+                    isScrolled && !isMobile
+                      ? "md:dark:hover:text-blue-500 md:dark:hover:bg-transparent"
+                      : ""
+                  }`}
                 >
-                  Insights
-                </Link>
+                  Insights{" "}
+                  <svg
+                    className="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  id="dropdownInsights"
+                  className="z absolute hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    className="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownInsightsLink"
+                  >
+                    <li>
+                      <Link
+                        href="/insights/case-studies"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-md"
+                      >
+                        Case Studies
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/insights/article2"
+                        className="block text-md px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Stories (Blogs)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/insights/article3"
+                        className="block text-md px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        News and Publications
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <Link

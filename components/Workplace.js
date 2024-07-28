@@ -55,8 +55,8 @@ const Workplace = () => {
             </div>
             <div className="lg:flex flex-col px-3">
               <p className="text-md font-medium ">
-                RIGHTS & <br />
-                RESPONSIBILITIES
+                Rights & <br />
+                Responsibilities
               </p>
             </div>
           </div>
