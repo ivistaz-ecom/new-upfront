@@ -84,7 +84,7 @@ const BlogComponents = () => {
             </li>
           ))
         ) : (
-          <div className="text-center text-3xl">Loading....</div>
+          <div className="text-center text-3xl"></div>
         )}
       </ul>
     </div>

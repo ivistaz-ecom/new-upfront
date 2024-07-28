@@ -42,7 +42,7 @@ const Footer = () => {
                 <li className="flex-grow">Case Studies</li>
                 <FaArrowRight className="me-20  " />
               </Link>
-              <Link href="/insights/blog" className="flex items-center justify-between text-white/60 hover:text-red-600 group mt-2">
+              <Link href="/insights/blogs" className="flex items-center justify-between text-white/60 hover:text-red-600 group mt-2">
                 <li className="flex-grow">Stories (Blogs)</li>
                 <FaArrowRight className="me-20  " />
               </Link>

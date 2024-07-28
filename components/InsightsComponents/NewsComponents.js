@@ -101,7 +101,7 @@ const NewsComponents = () => {
             </li>
           ))
         ) : (
-          <div className="text-center text-3xl">Loading...</div>
+          <div className="text-center text-3xl"></div>
         )}
       </ul>
       {/* <div className="text-center mt-4">

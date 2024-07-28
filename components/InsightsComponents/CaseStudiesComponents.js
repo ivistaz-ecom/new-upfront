@@ -77,7 +77,7 @@ const CaseStudiesComponents = () => {
               </li>
             ))
           ) : (
-            <div className="text-center text-3xl col-span-full">Loading...</div>
+            <div className="text-center text-3xl col-span-full"></div>
           )}
         </ul>
       {/* </div> */}
