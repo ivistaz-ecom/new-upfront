@@ -47,7 +47,7 @@ const NewsComponents = () => {
         NEWS AND PUBLICATIONS
       </h2> */}
       {/* <hr className="px-10 pb-10" /> */}
-      <ul className="grid lg:grid-cols-4 gap-8 container mx-auto">
+      <ul className="grid lg:grid-cols-4 gap-8 container mx-auto my-8">
         {data.length > 0 ? (
           data.map((post) => (
             <li key={post.id} className="border-red-600 border mb-10 lg:m-0 m-5">
