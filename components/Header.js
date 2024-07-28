@@ -208,7 +208,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="/insights/article2"
+                        href="/insights/blog"
                         className="block text-md px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Stories (Blogs)
@@ -216,7 +216,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="/insights/article3"
+                        href="/insights/news-and-publications"
                         className="block text-md px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         News and Publications

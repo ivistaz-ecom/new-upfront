@@ -31,11 +31,14 @@ const BlogComponents = () => {
   }, [siteUrl, serverUrl, categoryId]);
 
   return (
-    <div>
-      <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">STORIES (BLOGS)</h2>
+    <div> <div className="lg:bg-[url('/insights/blog.png')] bg-[url('/insights/blogMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col  pb-8">
+              
+    <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">STORIES (BLOGS)</h1>
+</div>
+      {/* <h2 className="lg:text-6xl text-3xl py-10 lg:px-10"></h2> */}
 
-      <hr className="px-10" />
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 container mx-auto">
+      {/* <hr className="px-10" /> */}
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8  container mx-auto">
         {data.length > 0 ? (
           data.map((post) => (
             <li key={post.id} className="border mb-10">

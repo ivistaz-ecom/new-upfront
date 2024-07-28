@@ -39,14 +39,18 @@ const NewsComponents = () => {
 
   return (
     <div>
-      <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">
+      <div className="lg:bg-[url('/insights/banner.png')] bg-[url('/insights/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col  pb-8">
+              
+              <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">NEWS AND <br /> PUBLICATIONS</h1>
+          </div>
+      {/* <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">
         NEWS AND PUBLICATIONS
-      </h2>
-      <hr className="px-10 pb-10" />
+      </h2> */}
+      {/* <hr className="px-10 pb-10" /> */}
       <ul className="grid lg:grid-cols-4 gap-8 container mx-auto">
         {data.length > 0 ? (
           data.map((post) => (
-            <li key={post.id} className="border-red-600 border mb-10 ">
+            <li key={post.id} className="border-red-600 border mb-10 lg:m-0 m-5">
               <div className="w-full">
                 {/* <div className="relative">
                   {post.acf && post.acf.thumbnail_image && (

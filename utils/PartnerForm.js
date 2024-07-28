@@ -35,6 +35,7 @@ const PartnerForm = ({ subject }) => {
     email: 'Please enter a valid email address.',
     emailDomain: 'This email domain is not allowed.',
     contactNo: 'Please enter only numbers.',
+    firstname: 'Name must be between 10 to 15 characters.',
   };
 
   const isValidEmail = (email) => {
@@ -55,6 +56,12 @@ const PartnerForm = ({ subject }) => {
         newErrors.email = customErrors.emailDomain;
       } else {
         delete newErrors.email;
+      }
+    } else if (name === 'firstname') {
+      if (value.length < 10 || value.length > 15) {
+        newErrors.firstname = customErrors.firstname;
+      } else {
+        delete newErrors.firstname;
       }
     } else {
       delete newErrors[name];
@@ -103,8 +110,6 @@ const PartnerForm = ({ subject }) => {
 
   return (
     <>
-      {/* {successMessage ? '' : (<small style={{ color: '#555' }}></small>)} */}
-      {/* {successMessage ? '' : (<h3>Submit a CV/Resume:</h3>)} */}
       <div className="form-bg mb-5 bg-[#4A4A4A] lg:w-1/2 w-full container">
         {formVisible ? (
           <form onSubmit={handleSubmit} encType="multipart/form-data" className='px-5 py-2 gap-4'>
@@ -115,9 +120,10 @@ const PartnerForm = ({ subject }) => {
                 placeholder="Enter Name"
                 value={formData.firstname}
                 onChange={handleChange}
-                maxLength={6}
+                minLength={10}
+                maxLength={15}
               />
-              {errors.firstname && <div className="invalid-feedback">{errors.firstname}</div>}
+              {errors.firstname && <div className="invalid-feedback text-red-500">{errors.firstname}</div>}
             </div>
             <div className="mb-3 col-span-3 md:col-span-1">
               <input
@@ -128,10 +134,10 @@ const PartnerForm = ({ subject }) => {
                 value={formData.contactNo}
                 onChange={handleChange}
               />
-              {errors.contactNo && <div className="invalid-feedback">{errors.contactNo}</div>}
+              {errors.contactNo && <div className="invalid-feedback text-red-500">{errors.contactNo}</div>}
             </div>
 
-            <div className="mb-3  border">
+            <div className="mb-3 border">
               <input
                 type="email"
                 name="email"
@@ -140,7 +146,7 @@ const PartnerForm = ({ subject }) => {
                 value={formData.email}
                 onChange={handleChange}
               />
-              {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+              {errors.email && <div className="invalid-feedback text-red-500">{errors.email}</div>}
             </div>
 
             <div className="mb-3 border">
@@ -152,7 +158,7 @@ const PartnerForm = ({ subject }) => {
                 value={formData.jobType}
                 onChange={handleChange}
               />
-              {errors.jobType && <div className="invalid-feedback">{errors.jobType}</div>}
+              {errors.jobType && <div className="invalid-feedback text-red-500">{errors.jobType}</div>}
             </div>
 
             <div className="mb-3">
@@ -164,7 +170,7 @@ const PartnerForm = ({ subject }) => {
                 value={formData.position}
                 onChange={handleChange}
               />
-              {errors.position && <div className="invalid-feedback">{errors.position}</div>}
+              {errors.position && <div className="invalid-feedback text-red-500">{errors.position}</div>}
             </div>
 
             <button

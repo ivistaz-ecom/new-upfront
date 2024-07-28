@@ -28,9 +28,14 @@ const CaseStudiesComponents = () => {
   }, [siteUrl, serverUrl, categoryId]);
 
   return (
-    < div>
-      <h2 className="lg:text-6xl text-3xl py-10 lg:px-16">CASE STUDIES</h2>
-      <hr className="px-10 pb-10 " />
+    <div>
+      <div className="lg:bg-[url('/insights/case.png')] bg-[url('/insights/caseMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col pb-8">
+        <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">
+        CASE STUDIES
+        </h1>
+      </div>
+      {/* <h2 className="lg:text-6xl text-3xl py-10 lg:px-16">CASE STUDIES</h2> */}
+      {/* <hr className="px-10 pb-10 " /> */}
       {/* <div className="flex justify-center"> */}
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 container mx-auto">
           {data.length > 0 ? (

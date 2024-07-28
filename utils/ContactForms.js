@@ -19,13 +19,13 @@ const ContactForm = ({ subject }) => {
   const [newPosition, setNewPosition] = useState("");
 
   const jobType = [
-    { id: "1", name: "Part Time" },
+    // { id: "1", name: "Part Time" },
     { id: "2", name: "Full Time" },
   ];
   const applying = [
-    { id: "1", position: "Project A" },
-    { id: "2", position: "Project B" },
-    { id: "3", position: "Project C" },
+    { id: "1", position: "Implementation Specialist as Network Consultant (NC)" },
+    // { id: "2", position: "Project B" },
+    // { id: "3", position: "Project C" },
   ];
 
   const [formData, setFormData] = useState({
@@ -61,6 +61,7 @@ const ContactForm = ({ subject }) => {
     email: "Please enter a valid email address.",
     emailDomain: "This email domain is not allowed.",
     contactNo: "Please enter only numbers.",
+    firstname: "Firstname must be between 10 to 15 characters.",
   };
 
   function isValidEmail(email) {
@@ -82,6 +83,8 @@ const ContactForm = ({ subject }) => {
       } else {
         delete newErrors.email;
       }
+    } else if (name === "firstname" && (value.length < 10 || value.length > 15)) {
+      newErrors.firstname = customErrors.firstname;
     } else {
       delete newErrors[name];
     }
@@ -97,7 +100,6 @@ const ContactForm = ({ subject }) => {
       const fileExtension = selectedFile.name.split(".").pop().toLowerCase();
 
       if (allowedExtensions.includes(fileExtension)) {
-        // console.log(selectedFile);
         setFile(selectedFile);
         setHideSubmitButton(false);
         setFileErrors(false);
@@ -115,8 +117,6 @@ const ContactForm = ({ subject }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // setIsSubmitting(true);
-    // console.log("iam clicked");/\
     try {
       const formDataToSend = new FormData();
       for (const key in formData) {
@@ -134,7 +134,6 @@ const ContactForm = ({ subject }) => {
         formDataToSend,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
-      // console.log(response);
       if (response.data.status === "mail_sent") {
         setFormVisible(false);
         setSuccessMessage(true);
@@ -176,10 +175,10 @@ const ContactForm = ({ subject }) => {
                   placeholder="Enter Name"
                   value={formData.firstname}
                   onChange={handleChange}
-                  maxLength={6}
+                  maxLength={15}
                 />
                 {errors.firstname && (
-                  <div className="invalid-feedback">{errors.firstname}</div>
+                  <div className="invalid-feedback text-red-500">{errors.firstname}</div>
                 )}
               </div>
               <div className="mb-3 col-span-2">
@@ -194,7 +193,7 @@ const ContactForm = ({ subject }) => {
                   onChange={handleChange}
                 />
                 {errors.contactNo && (
-                  <div className="invalid-feedback">{errors.contactNo}</div>
+                  <div className="invalid-feedback text-red-500">{errors.contactNo}</div>
                 )}
               </div>
               <div className="mb-3">
@@ -209,7 +208,7 @@ const ContactForm = ({ subject }) => {
                   onChange={handleChange}
                 />
                 {errors.email && (
-                  <div className="invalid-feedback">{errors.email}</div>
+                  <div className="invalid-feedback text-red-500">{errors.email}</div>
                 )}
               </div>
               <div className="mb-3 col-span-1">
@@ -229,7 +228,7 @@ const ContactForm = ({ subject }) => {
                   ))}
                 </select>
                 {errors.jobType && (
-                  <div className="invalid-feedback ">{errors.jobType}</div>
+                  <div className="invalid-feedback text-red-500">{errors.jobType}</div>
                 )}
               </div>
               <div className="mb-3">
@@ -250,7 +249,7 @@ const ContactForm = ({ subject }) => {
                   ))}
                 </select>
                 {errors.position && (
-                  <div className="invalid-feedback">{errors.position}</div>
+                  <div className="invalid-feedback text-red-500">{errors.position}</div>
                 )}
               </div>
               <div className="mb-3 col-span-1">
@@ -265,18 +264,18 @@ const ContactForm = ({ subject }) => {
                   aria-describedby="inputGroupFileAddon04"
                   aria-label="Upload"
                 />
-                <p className="text-white"  style={{ lineHeight: "16px", fontSize: "12px" }}>
+                <p className="text-white" style={{ lineHeight: "16px", fontSize: "12px" }}>
                   Complete your job application by uploading your resume or CV.
                   Upload either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.
                 </p>
                 {errors.resume && (
-                  <div className="invalid-feedback">{errors.resume}</div>
+                  <div className="invalid-feedback text-red-500">{errors.resume}</div>
                 )}
                 <div className="fs-6" style={{ color: "#b02a37" }}>
                   {errors.resume}
                 </div>
                 {fileErrors && (
-                  <div className="error">
+                  <div className="error text-red-500">
                     Please upload the resume (DOC, DOCX, PDF, RTF, TXT).
                   </div>
                 )}
