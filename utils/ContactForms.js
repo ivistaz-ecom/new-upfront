@@ -18,7 +18,8 @@ const ContactForm = ({ subject }) => {
   const [positions, setPositions] = useState([]);
   const [newPosition, setNewPosition] = useState("");
 
-  const jobType = [{ id: "2", name: "Full Time" }];
+  const jobType = [{ id: "1", name: "Part Time" },
+    { id: "2", name: "Full Time" }];
   const applying = [
     { id: "1", position: "Implementation Specialist as Network Consultant (NC)" },
   ];

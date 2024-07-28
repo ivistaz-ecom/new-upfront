@@ -26,13 +26,19 @@ const Footer = () => {
                 <li className="flex-grow">Our Team</li>
                 <FaArrowRight className="mt-1 me-20  " />
               </Link>
+              <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
+              <li className="mt-4">
+              <Link href="/what-we-do">
+                <h3 className="text-white text-2xl hover:text-red-600">What We Do</h3>
+              </Link>
+              </li>
             </ul>
-            <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
+            {/* <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
               <Link href="/what-we-do">
                 <h3 className="text-white text-2xl">What We Do</h3>
               </Link>
               <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
-            </ul>
+            </ul> */}
             <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
               <h3 className="text-white text-2xl flex items-center">
                 Insights <IoMdArrowDropdown className="ml-2 float-end -end-10" />
@@ -54,7 +60,7 @@ const Footer = () => {
             </ul>
             <ul className="text-white/60 text-xl">
               <Link href="/contact-us">
-                <h3 className="text-white text-2xl">Contact Us</h3>
+                <h3 className="text-white text-2xl hover:text-red-600">Contact Us</h3>
               </Link>
               <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link href="mailto:Info@upfrontglobal.com">
