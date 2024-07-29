@@ -924,10 +924,10 @@ export const HomeBrands = [
     imageUrl:
       '/homePage/ourPartner8.png',
   },
-  {
-    imageUrl:
-      '/homePage/ourPartner9.png',
-  },
+  // {
+  //   imageUrl:
+  //     '/homePage/ourPartner9.png',
+  // },
   {
     imageUrl:
       '/homePage/ourPartner10.png',
