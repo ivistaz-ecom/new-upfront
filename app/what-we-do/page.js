@@ -124,7 +124,7 @@ const Page = () => {
               workforce, placing their health and happiness at the core of its
               work and upholding its commitment to the community.
             </p>
-            <p className="text-xl text-[#222222] lg:p-0 mt-3">
+            {/* <p className="text-xl text-[#222222] lg:p-0 mt-3">
               We employ innovative, transformative, and sustainable practices
               tailored to be locally applicable, sensitive, and inclusive,
               effectively addressing specific needs and requirements to bring
@@ -144,7 +144,7 @@ const Page = () => {
               solutions to encourage such investments and generate tangible
               results, reinforcing its overall mission and vision for a healthy,
               wealthy, and thriving workforce.
-            </p>
+            </p> */}
             
           </div>
         </div>
