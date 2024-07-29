@@ -438,7 +438,7 @@ export const ourWorkTabs = [
 export const ourStoryTabs = [
   {
     id: 1,
-    tab: 'Why Workforce Wellbeing',
+    tab: 'Why Workforce Wellbeing?',
   },
   {
     id: 2,
@@ -988,52 +988,52 @@ export const HomeBrands = [
 export const ThematicAreas = [
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-6.svg',
+      '/homePage/agency.svg',
     headline: 'Agency<br> Building',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-3.svg',
+      '/homePage/health.svg',
     headline: 'Preventive & <br> Promotive Health',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-1.svg',
+      '/homePage/finance.svg',
     headline: 'Financial & <br> Digital Inclusion',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-2.svg',
+      '/homePage/social.svg',
     headline: 'Social <br> Protection',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-7.svg',
+      '/homePage/gender.svg',
     headline: 'Gender Equality & <br> Equity',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-4.svg',
+      '/homePage/world.svg',
     headline: 'Just Transition & <br> Climate Actions',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-5.svg',
+      'homePage/home.svg',
     headline: 'Safe & Sustainable Accommodation',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-9.svg',
+      '/homePage/girl.svg',
     headline: 'Career Progression <br> for Women',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-8.svg',
+      '/homePage/shield.svg',
     headline: 'Safe & Sustainable <br> Workplaces',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/thematic-area/icon-7.svg',
+      'homePage/hand.svg',
     headline: 'Inclusive <br> Workplaces',
   },
 ]

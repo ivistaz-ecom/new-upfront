@@ -29,7 +29,7 @@ const page = () => {
 
   const getActiveTab = (tab) => {
     switch (tab) {
-      case "Why Workforce Wellbeing":
+      case "Why Workforce Wellbeing?":
         scrollToSection(worforceRef);
         break;
       case "We Believe":
@@ -79,7 +79,7 @@ const metaImage = "/ourStory/banner.png"
 
       <div className=" py-16 container mx-auto" ref={worforceRef}>
         <h5 className="lg:text-6xl text-3xl lg:px-0 text-center">
-          <span className="text-red-600">WHY</span><br /> WORKFORCE  WELLBEING
+          <span className="text-red-600">WHY</span><br /> WORKFORCE  WELLBEING?
         </h5>
       </div>
 

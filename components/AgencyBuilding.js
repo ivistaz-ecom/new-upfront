@@ -33,7 +33,7 @@ const AgencyBuilding = () => {
             </div>
           </div>
           <p className="pt-3">
-            Sharing knowledge with men and women that includes social and gender
+            Sharing knowledge with women and young girls that includes social and gender
             norms, empowering participants to challenge stereotypes, improve
             themselves, and ask for what they deserve. Life skills training is
             also integrated with tools for their personal and professional

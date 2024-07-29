@@ -88,7 +88,7 @@ const SocialProtection = () => {
           gaps in coverage, assess the effectiveness of existing programmes, and
           gather insights into emerging needs and trends with different
           workforces/groups. By leveraging data and research findings, we can
-          tailor our interventions to better meet the needs of our employees and
+          tailor our interventions to better meet the needs of the workforce and
           address systemic challenges.
         </p>
       </div>
