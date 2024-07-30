@@ -5,7 +5,7 @@ export default function WellBeing() {
   return (
     <div className="lg:mx-auto lg:px-40 lg:py-7 mt-6 tracking-wide lg:bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/background.svg')] h-auto bg-cover bg-no-repeat">
       <h1 className="lg:text-6xl text-3xl text-center">
-        <span className="text-red-600 ">WHAT <br /></span> WE DO
+        <span className=" ">WHAT <br /></span> WE DO
       </h1>
       <img
         src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/arrow.svg"

@@ -41,7 +41,7 @@ const page = () => {
         // data-aos-duration="1000"
       >
         <h1 className="lg:text-6xl text-3xl mb-6 lg:px-10 container mx-auto">
-          <span className="text-red-600">CORE</span> TEAM
+          <span className="">CORE</span> TEAM
         </h1>
         <hr />
         <ul
@@ -78,7 +78,7 @@ const page = () => {
         // data-aos-duration="1000"
       >
         <h2 className="lg:text-6xl text-3xl mb-6 lg:px-10 container mx-auto">
-          <span className="text-red-600">OUR</span> MENTORS
+          <span className="">OUR</span> MENTORS
         </h2>
         <hr />
         <ul

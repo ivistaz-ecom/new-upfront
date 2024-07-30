@@ -42,7 +42,7 @@ const CaseStudiesPosts = ({ slug }) => {
           <div className="bg-[#E8E8E8] p-4">
             <p className="text-black">
               <Link href="/insights">Insights /</Link>
-              <span className="fs-6 mb-0 px-1">Case Studies /</span>
+              <span className="fs-6 mb-0 px-1">Impact Stories /</span>
               <span dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
             </p>
           </div>
@@ -85,9 +85,9 @@ const CaseStudiesPosts = ({ slug }) => {
                 <Link href="/insights/case-studies">
                   <button
                     type="button"
-                    className="focus:outline-none w-64 text-white bg-[#222222]  focus:ring-4 focus:ring-red-300 font-normal text-md px-4 py-4 me-4 mb-4 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+                    className="focus:outline-none w-44 text-white bg-[#222222]  focus:ring-4 focus:ring-red-300 font-normal text-md px-4 py-4 me-4 mb-4 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
                   >
-                    View All Impact Stories
+                    View All Stories
                   </button>
                 </Link>
               </div>

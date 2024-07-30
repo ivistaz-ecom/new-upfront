@@ -31,7 +31,7 @@ const CaseStudiesComponents = () => {
     <div>
       <div className="lg:bg-[url('/insights/case.png')] bg-[url('/insights/caseMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col pb-8">
         <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">
-        CASE STUDIES
+        IMPACT STORIES
         </h1>
       </div>
       {/* <h2 className="lg:text-6xl text-3xl py-10 lg:px-16">CASE STUDIES</h2> */}
@@ -51,7 +51,7 @@ const CaseStudiesComponents = () => {
                       />
                     )}
                   </div>
-                  <div className="bg-[#F40F34] mx-3 mt-5 p-1 post-content-title">
+                  <div className="bg-[#222222] mx-3 mt-5 p-1 post-content-title">
                     <span
                       className="text-white"
                       dangerouslySetInnerHTML={{ __html: post.title.rendered }}
@@ -66,10 +66,10 @@ const CaseStudiesComponents = () => {
                     ></div>
                     <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
                       <Link
-                        href={`/insights/case-studies/${post.slug}`}
+                        href={`/insights/impact-stories/${post.slug}`}
                         className="px-7"
                       >
-                        Read Case Study
+                        Read more
                       </Link>
                     </Button>
                   </div>

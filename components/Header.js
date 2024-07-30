@@ -200,10 +200,10 @@ const Header = () => {
                   >
                     <li>
                       <Link
-                        href="/insights/case-studies"
+                        href="/insights/impact-stories"
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-md"
                       >
-                        Case Studies
+                        Impact Stories
                       </Link>
                     </li>
                     <li>

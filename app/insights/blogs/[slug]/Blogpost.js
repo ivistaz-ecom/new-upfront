@@ -77,7 +77,7 @@ const BlogPosts = ({ slug }) => {
                 <Link href="/insights/blogs">
                   <button
                     type="button"
-                    className="focus:outline-none w-44 text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:ring-red-300 font-normal text-md px-4 py-4 me-4 mb-4 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+                    className="focus:outline-none w-44 text-white bg-[#222222] focus:ring-4 focus:ring-red-300 font-normal text-md px-4 py-4 me-4 mb-4 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
                   >
                     View All Stories
                   </button>

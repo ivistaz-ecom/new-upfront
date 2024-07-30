@@ -61,7 +61,7 @@ const BlogComponents = () => {
                     BLOG
                   </button> */}
                 </div>
-                <div className="bg-[#F40F34] mx-3 mt-5 p-1 post-content-title">
+                <div className="bg-[#222222] mx-3 mt-5 p-1 post-content-title">
                   <span
                     className="text-white "
                     dangerouslySetInnerHTML={{ __html: post.title.rendered }}

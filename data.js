@@ -960,6 +960,10 @@ export const HomeBrands = [
     imageUrl:
       '/homePage/ourPartner17.png',
   },
+  {
+    imageUrl:
+      '/homePage/ourPartner18.png',
+  },
 ]
 
 export const ThematicAreas = [

@@ -44,8 +44,8 @@ const Footer = () => {
                 Insights <IoMdArrowDropdown className="ml-2 float-end -end-10" />
               </h3>
               <div className="lg:w-[220px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
-              <Link href="/insights/case-studies" className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 group">
-                <li className="flex-grow">Case Studies</li>
+              <Link href="/insights/impact-stories" className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 group">
+                <li className="flex-grow">Impact Stories</li>
                 <FaArrowRight className="me-20  " />
               </Link>
               <Link href="/insights/blogs" className="flex items-center justify-between text-white/60 hover:text-red-600 group mt-2">

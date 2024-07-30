@@ -5,7 +5,7 @@ export default function WellBeing() {
     <div className="bg-[#F2F2F2]">
       <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-7 mt-6 tracking-wide ">
         <h1 className="lg:text-6xl text-3xl text-center lg:pt-0 pt-4">
-          <span className="text-red-600 ">
+          <span className=" ">
             WHO <br />
           </span>{" "}
           WE ARE

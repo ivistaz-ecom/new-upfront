@@ -11,9 +11,10 @@ import ContactForms from "@utils/ContactForms";
 import PartnerForm from "@utils/PartnerForm";
 import Seo from "../../components/SeoComponents/Seo";
 import Link from "next/link";
+import Image from "next/image";
 
 const Page = () => {
-  const [activeTab, setActiveTab] = useState("Partner With Us");
+  const [activeTab, setActiveTab] = useState("Contact Info");
 
   const renderContent = () => {
     switch (activeTab) {
@@ -55,7 +56,48 @@ const Page = () => {
               <h2 className="text-black lg:text-6xl text-3xl">CONTACT INFO</h2>
             </div>
 
-            <div className="lg:p-4 pt-7 text-xl">
+            <div className="lg:flex text-xl ">
+              <div className="lg:px-1 lg:ms-3 pt-5 pb-2 lg:pb-0">Email:</div>
+              <Link href="mailto:info@upfrontglobal.com">
+                <div className="lg:pt-5 pb-2 ml-0">info@upfrontglobal.com</div>
+              </Link>
+            </div>
+            <div className=" text-xl border-b border-gray-400 lg:mx-4"/>
+            <div className="lg:flex text-xl gap-3">
+              <div className="lg:px-1 lg:ms-3 pt-5 pb-2 lg:pb-0">Social Media:</div>
+              <div className="flex flex-row gap-3">
+              <Link href="https://www.linkedin.com/showcase/upfrontcg/">
+                <div className="lg:pt-5 pb-2 ml-0">
+                  <Image width={35} height={30} src="/contactUs/linkedin.png"/>
+                </div>
+              </Link>
+              <Link href="https://x.com/UpfrontCG">
+                <div className="lg:pt-5 pb-2 ml-0">
+                  <Image width={35} height={30} src="/contactUs/twitter.png"/>
+                </div>
+              </Link>
+              <Link href="https://www.instagram.com/upfront.global/">
+                <div className="lg:pt-5 pb-2 ml-0">
+                  <Image width={35} height={30} src="/contactUs/insta.png"/>
+                </div>
+              </Link>
+              </div>
+            </div>
+            <div className=" text-xl border-b border-gray-400 lg:mx-4"/>
+
+            <div className="lg:flex text-xl gap-3">
+              <div className="lg:px-1 lg:ms-3 pt-5 pb-2 lg:pb-0">Office Address:</div>
+              <Link href="https://www.linkedin.com/showcase/upfrontcg/">
+                <div className="lg:pt-5 pb-2 ml-0">
+                  <h3 className="font-bold">Bengaluru:</h3>
+                  <p>#25, 1st Main, AECS Layout, Ashwath Nagar, Bengaluru - 560094</p>
+                  <h3 className="font-bold mt-4">Delhi:</h3>
+                  <p>A-10, Second Floor, Green Park, New Delhi - 110016</p>
+                </div>
+              </Link>
+             
+            </div>
+            {/* <div className="lg:p-4 pt-7 text-xl lg:flex">
               Office Address:
               <div className="lg:grid grid-cols-3 gap-4 text-xl border-b border-gray-400"></div>
               <div className="mt-3">
@@ -68,15 +110,10 @@ const Page = () => {
                 <span className="text-xl">Delhi:</span>
                 <div>A-10, Second Floor, Green Park, New Delhi - 110016</div>
               </div>
-            </div>
+            </div> */}
 
           
-            <div className="lg:flex text-xl ">
-              <div className="lg:px-1 lg:ms-3 pt-5 pb-2 lg:pb-0">Email:</div>
-              <Link href="mailto:info@upfrontglobal.com">
-                <div className="lg:pt-5 pb-2 ml-0">info@upfrontglobal.com</div>
-              </Link>
-            </div>
+            
             <div className=" text-xl border-b border-gray-400 lg:mx-4"/>
 
             {/* <div className="lg:grid grid-cols-3 lg:gap-4 text-xl">

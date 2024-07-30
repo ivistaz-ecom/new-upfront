@@ -30,7 +30,7 @@ const CaseStudy = () => {
   return (
     <div className="bg-customLightGray bg-opacity-60 lg:p-10 flex flex-col">
       <h1 className="lg:text-6xl text-3xl text-center lg:mt-0 mt-4">
-        <span className="text-red-600 ">CASE <br /></span> STUDIES
+        <span className=" ">IMPACT <br /></span> STORIES
       </h1>
       <img
         src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/arrow.svg"
@@ -69,10 +69,10 @@ const CaseStudy = () => {
                     ></div>
 
                     <Link
-                      href={`/insights/case-studies/${post.slug}`}
-                      className="text-[#F40F34] text-start border border-[#9a9a9a] p-4 justify-between flex hover:bg-black hover:text-white"
+                      href={`/insights/impact-stories/${post.slug}`}
+                      className="text-[] text-start border border-[#9a9a9a] p-4 justify-between flex hover:bg-black hover:text-white"
                     >
-                      Read Case Study
+                      Read more
                       <img src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/btnArrow.svg" />
                     </Link>
                   </div>
@@ -83,9 +83,9 @@ const CaseStudy = () => {
       </div>
 
       <div className="lg:px-16 lg:pt-8 pb-6 text-center lg:p-0 p-2">
-        <Link href="/insights">
+        <Link href="/insights/impact-stories">
           <button className="bg-customGray self-center text-white p-3 mt-5">
-            View All Case Studies
+            View All Stories
           </button>
         </Link>
       </div>

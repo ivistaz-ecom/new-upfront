@@ -484,7 +484,7 @@ export const whatWeDoTabs = [
 export const contactUsTabs = [
   {
     id: 1,
-    tab: 'Partner With Us',
+    tab: 'Contact Info',
   },
   {
     id: 2,
@@ -492,7 +492,7 @@ export const contactUsTabs = [
   },
   {
     id: 3,
-    tab: 'Contact Info',
+    tab: 'Partner With Us',
   },
 ]
 export const insightsTabs = [
@@ -869,13 +869,13 @@ export const OurKeyCommunities = [
     },
     {
       id: 5,
-      imageurl: "/whatWeDo/fishers.png",
+      imageurl: "/whatWeDo/img-2.png",
       title :"Fish Vendors",
       
     },
     {
       id: 6,
-      imageurl: "/whatWeDo/garbage.png",
+      imageurl: "/whatWeDo/img-4.png",
       title :"Sanitation Workforce",
     
     },
@@ -887,13 +887,13 @@ export const OurKeyCommunities = [
     },
     {
       id: 8,
-      imageurl: "/whatWeDo/smilefarmer.png",
+      imageurl: "/whatWeDo/img-1.png",
       title :"Construction Workforce",
       
     },
     {
       id: 9,
-      imageurl: "/whatWeDo/eggs.png",
+      imageurl: "/whatWeDo/img-3.png",
       title :"Farmers",
     
     },

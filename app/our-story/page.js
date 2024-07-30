@@ -79,7 +79,7 @@ const metaImage = "/ourStory/banner.png"
 
       <div className=" py-16 container mx-auto" ref={worforceRef}>
         <h5 className="lg:text-6xl text-3xl lg:px-0 text-center">
-          <span className="text-red-600">WHY</span><br /> WORKFORCE  WELLBEING?
+          <span className="">WHY</span><br /> WORKFORCE  WELLBEING?
         </h5>
       </div>
 
@@ -119,23 +119,23 @@ const metaImage = "/ourStory/banner.png"
 
       <div className="py-16 container mx-auto" ref={ourhistoryRef}>
         <h4 className="lg:text-6xl text-3xl lg:px-0  text-center">
-          <span className="text-red-600">OUR</span> <br /> HISTORY
+          <span className="">OUR</span> <br /> HISTORY
         </h4>
         <div className="flex justify-center">
           <Image
-            src="/ourStory/our_history.png"
+            src="/ourStory/history.png"
             width={700}
             height={600}
-            className=" hidden lg:block"
+            className=""
             alt="w-[40%]"
           />
-          <img
+          {/* <img
             src="https://beta.upfront.global/wp-content/uploads/2024/07/our_his_mob.png"
             width={500}
             height={600}
             className="w-11/12 block lg:hidden mt-3"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </>

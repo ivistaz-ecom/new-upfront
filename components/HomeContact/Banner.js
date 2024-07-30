@@ -60,14 +60,14 @@ const Content = React.forwardRef((props, ref) => {
                 <img src={items.imageUrl} className="w-full" />
               </div>
               <div className="justify-start items-start flex flex-col ml-3 -mt-28">
-                <h3 className="text-[#F40F34] text-[20px]">{items.headline}</h3>
+                <h3 className="text-[#292929] text-[20px]">{items.headline}</h3>
                 <p className="text-[#292929] text-[23px]">{items.desc}</p>
               </div>
             </div>
 
             <div className="relative hidden lg:grid lg:grid-cols-2 gap-0 h-[400px] justify-center items-center" key={`desktop-${index}`}>
               <div className="text-4xl justify-start items-start flex flex-col gap-4 lg:w-8/12 lg:ml-40 ml-3 lg:py-0 py-4 pt-5">
-                <h3 className="text-[#F40F34] text-[24px]">{items.headline}</h3>
+                <h3 className="text-[#292929] text-[24px]">{items.headline}</h3>
                 <p className="text-[#292929] text-[34px]">{items.desc}</p>
               </div>
               <div className="relative lg:w-[100%] lg:h-auto h-[700px] flex justify-center items-center" data-aos="zoom-in">
