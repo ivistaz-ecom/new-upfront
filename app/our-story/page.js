@@ -124,10 +124,10 @@ const metaImage = "/ourStory/banner.png"
         <div className="flex justify-center">
           <Image
             src="/ourStory/history.png"
-            width={700}
+            width={1200}
             height={600}
-            className=""
-            alt="w-[40%]"
+            className="lg:w-[90%]"
+            alt="history"
           />
           {/* <img
             src="https://beta.upfront.global/wp-content/uploads/2024/07/our_his_mob.png"

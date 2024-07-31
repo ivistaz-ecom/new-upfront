@@ -894,76 +894,109 @@ export const HomeCount = [
 export const HomeBrands = [
   {
     imageUrl:
-      '/homePage/ourPartner1.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-1.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner2.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-2.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner3.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-3.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner4.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-4.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner5.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-5.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner6.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-6.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner7.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-7.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner8.png',
-  },
-  // {
-  //   imageUrl:
-  //     '/homePage/ourPartner9.png',
-  // },
-  {
-    imageUrl:
-      '/homePage/ourPartner10.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-8.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner11.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-9.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner12.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-10.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner13.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-11.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner14.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-12.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner15.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-13.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner16.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-14.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner17.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-15.png',
   },
   {
     imageUrl:
-      '/homePage/ourPartner18.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-16.png',
   },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-17.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-18.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-19.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-20.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-21.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-22.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-23.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-24.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-25.png',
+  },
+  {
+    imageUrl:
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-26.png',
+  },
+
 ]
 
 export const ThematicAreas = [
