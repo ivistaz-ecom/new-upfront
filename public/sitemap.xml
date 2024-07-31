@@ -4,35 +4,109 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
   <loc>https://upfront.global/</loc>
-  <lastmod>2024-06-29T07:25:11+00:00</lastmod>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://upfront.global/our-story</loc>
-  <lastmod>2024-06-29T07:25:11+00:00</lastmod>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://upfront.global/our-team</loc>
-  <lastmod>2024-06-29T07:25:11+00:00</lastmod>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://upfront.global/what-we-do</loc>
-  <lastmod>2024-06-29T07:25:11+00:00</lastmod>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://upfront.global/insights</loc>
-  <lastmod>2024-06-29T07:25:11+00:00</lastmod>
+  <loc>https://upfront.global/insights/impact-stories</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/blogs</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/news-and-publications</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://upfront.global/contact-us</loc>
-  <lastmod>2024-06-29T07:25:11+00:00</lastmod>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/impact-stories/system-society-esic</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/impact-stories/organisation-factory-sri-lanka-uhd</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/impact-stories/individual-sv-fisherwomen</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/blogs/empowering-indias-workforce-role-of-private-sector-in-addressing-key-challenges-and-opportunities</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/blogs/nutrition-for-nourishment-healthy-food-habits-are-a-gateway-to-workforce-wellbeing</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/blogs/a-glimpse-into-the-life-of-an-invisible-workforce-street-vendors-of-india-2</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/blogs/ensuring-health-security-bridging-the-gap-for-street-vendors</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url><url>
+  <loc>https://upfront.global/insights/blogs/empowering-the-fisherfolk-entrepreneurs-in-uppada-the-journey-of-jagamani-and-durga</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/blogs/pavithras-path-to-empowerment-navigating-menstrual-health-for-enhanced-work-life-balance</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url><url>
+  <loc>https://upfront.global/insights/blogs/beenas-journey-of-finding-strength-and-support-at-the-workplace</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url><url>
+  <loc>https://upfront.global/insights/blogs/rehanas-conquests-navigating-challenges-and-seizing-the-opportunities</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/blogs/participation-of-people-with-disability-in-the-labor-force-the-future-of-work</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upfront.global/insights/blogs/parveens-journey-of-hope-empowering-the-street-vendors</loc>
+  <lastmod>2024-07-31T11:30:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
