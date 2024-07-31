@@ -845,7 +845,7 @@ export const impact = [
 export const OurKeyCommunities = [
     {
       id: 1,
-      imageurl : "/whatWeDo/streetVendors.png",
+      imageurl : "/whatWeDo/streets.png",
       title :"Street Vendors",
       
     },
