@@ -18,7 +18,6 @@ const BlogComponents = () => {
         const response = await fetch(
           `${siteUrl}/posts?categories=${categoryId}&_embed&production_mode[]=${serverUrl}`
           // `${siteUrl}/posts?categories=${categoryId}&_embed&production_mode[]=${serverUrl}&page=${page}&per_page=11`
-
         );
         const data = await response.json();
         setData(data);
@@ -31,12 +30,14 @@ const BlogComponents = () => {
   }, [siteUrl, serverUrl, categoryId]);
 
   return (
-    <div> <div className="lg:bg-[url('/insights/blog.png')] bg-[url('/insights/blogMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col  pb-8">
-              
-    <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">STORIES (BLOGS)</h1>
-</div>
+    <div>
+      {" "}
+      <div className="lg:bg-[url('/insights/blog.png')] bg-[url('/insights/blogMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col  pb-8">
+        <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">
+          STORIES (BLOGS)
+        </h1>
+      </div>
       {/* <h2 className="lg:text-6xl text-3xl py-10 lg:px-10"></h2> */}
-
       {/* <hr className="px-10" /> */}
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8  container mx-auto">
         {data.length > 0 ? (
@@ -74,11 +75,11 @@ const BlogComponents = () => {
                     }}
                     className="fs-5 mb-3 mx-3 mt-5 p-1 post-content"
                   ></div>
-                  <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
-                    <Link href={`/insights/blogs/${post.slug}`} className="px-7">
+                  <Link href={`/insights/blogs/${post.slug}`} className="px-7">
+                    <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
                       Read More
-                    </Link>
-                  </Button>
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </li>

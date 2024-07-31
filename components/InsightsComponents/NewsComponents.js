@@ -9,7 +9,7 @@ const NewsComponents = () => {
   const siteUrl = ConfigData.wpApiUrl;
   const serverUrl = ConfigData.SERVER;
   const categoryId = 5;
-  const [data, setData] = useState([]); 
+  const [data, setData] = useState([]);
   const [visibleItems, setVisibleItems] = useState(8);
   const getActiveTab = (tab) => {
     // setActiveTab(tab);
@@ -40,9 +40,10 @@ const NewsComponents = () => {
   return (
     <div>
       <div className="lg:bg-[url('/insights/banner.png')] bg-[url('/insights/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col  pb-8">
-              
-              <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">NEWS AND <br /> PUBLICATIONS</h1>
-          </div>
+        <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">
+          NEWS AND <br /> PUBLICATIONS
+        </h1>
+      </div>
       {/* <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">
         NEWS AND PUBLICATIONS
       </h2> */}
@@ -50,7 +51,10 @@ const NewsComponents = () => {
       <ul className="grid lg:grid-cols-4 gap-8 container mx-auto my-8">
         {data.length > 0 ? (
           data.map((post) => (
-            <li key={post.id} className="border-red-600 border mb-10 lg:m-0 m-5">
+            <li
+              key={post.id}
+              className="border-red-600 border mb-10 lg:m-0 m-5"
+            >
               <div className="w-full">
                 {/* <div className="relative">
                   {post.acf && post.acf.thumbnail_image && (
@@ -77,24 +81,24 @@ const NewsComponents = () => {
                     })}
                   </p>
                 )} */}
-                <div className="flex-col h-48 flex justify-between">
+                <div className="flex-col h-52 flex justify-between">
                   <div className="mx-3 mt-5 p-1">
                     <span
-                      className="text-black font-bold"
+                      className="text-black font-bold post-content-title"
                       dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                     />
                   </div>
 
                   <div>
-                    <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
-                      <Link
-                        target="_blank"
-                        href={`${post.acf.news_and_publications_url}`}
-                        className="px-7"
-                      >
+                    <Link
+                      target="_blank"
+                      href={`${post.acf.news_and_publications_url}`}
+                      className="px-7"
+                    >
+                      <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
                         Read More
-                      </Link>
-                    </Button>
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
