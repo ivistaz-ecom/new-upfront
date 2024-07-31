@@ -9,11 +9,12 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const OurPartners = () => {
   var settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     arrows: false,
     speed: 1000,
     slidesToShow: 5 ,
+    autoplaySpeed:1500,
     slidesToScroll: 1,
     autoplay: true,
     responsive: [

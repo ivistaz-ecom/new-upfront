@@ -98,7 +98,7 @@ const metaImage = "/ourStory/banner.png"
       <div className='block lg:hidden'>
         <div className="pb-16 mx-auto container flex justify-center">
           <Image
-            src="/ourStory/workForceWellbeingMobile.png"
+            src="/ourStory/mobile_force.png"
             width={1000}
             height={700}
             className="w-11/12"
