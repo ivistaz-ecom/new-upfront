@@ -27,11 +27,11 @@ export default function WellBeing() {
         className="mx-auto py-4"
         alt="Arrow"
       />
-      <div className="bg-[#222222] grid lg:grid-cols-4 grid-cols-1 mx-auto text-center py-4">
+      <div className="bg-[#222222] grid lg:grid-cols-4 grid-cols-1 mx-auto text-center py-4 relative">
         {HomeCount.map((item, index) => (
           <div
             key={index}
-            className={`py-8 border-r border-white ${index === HomeCount.length - 1 ? 'border-r-0' : ''}`}
+            className={`py-6 border-r border-white relative ${index === HomeCount.length - 1 ? 'border-r-0' : ''}`}
           >
             <CountUp
               end={item.count}
@@ -39,7 +39,8 @@ export default function WellBeing() {
               formattingFn={formatIndianNumber}
               className="text-3xl text-white"
             />
-            <div className="text-white text-lg font-light pt-4" dangerouslySetInnerHTML={{ __html: item.title }}></div>
+            <div className="text-white text-lg font-light" dangerouslySetInnerHTML={{ __html: item.title }}></div>
+            <p className='text-white text-[11px] absolute bottom-0 right-0 pe-2  pb-0 top-[140px]'>{item.month}</p>
           </div>
         ))}
       </div>

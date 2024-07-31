@@ -955,7 +955,8 @@ export const HomeCount = [
   { count: '582405', title: 'Factory <br> Workforce', border: '' },
   { count: '1687', title: 'Frontline Health <br>Workforce', border: '' },
   { count: '40830', title: 'Street Vendor <br> Workforce', border: '' },
-  { count: '65032', title: 'Women  <br> Workforce', border: '' },
+  { count: '65032', title: 'Women  <br> Workforce',month : "*Reach from Jan '23 - July '24", border: '' },
+  
 ]
 
 export const HomeBrands = [
