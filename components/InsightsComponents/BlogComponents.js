@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 import ConfigData from "../../config";
 import Link from "next/link";
 import { Button } from "flowbite-react";
-
+import Header from "@components/Header";
+import Seo from "../../components/SeoComponents/Seo"
 const BlogComponents = () => {
   const siteUrl = ConfigData.wpApiUrl;
   // const [page, setPage] = useState(1);
@@ -29,8 +30,18 @@ const BlogComponents = () => {
     fetchData();
   }, [siteUrl, serverUrl, categoryId]);
 
+  const seoProps = {
+    title: "Stories of an empowered and thriving workforce",
+    description:
+      "Explore everything from the role of the private sector in empowering the Indian workforce to the importance of nutrition for workforce wellbeing. ",
+    path: "https://upfront.global/insights/blogs",
+    metaImage: "/whatWeDo/banner.png",
+  };
+
   return (
     <div>
+      <Header />
+      <Seo {...seoProps} />
       {" "}
       <div className="lg:bg-[url('/insights/blog.png')] bg-[url('/insights/blogMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col  pb-8">
         <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">

@@ -5,7 +5,7 @@ import BlogComponents from '@components/InsightsComponents/BlogComponents'
 const page = () => {
   return (
     <div>
-        <Header/>
+      
         <BlogComponents/>
     </div>
   )

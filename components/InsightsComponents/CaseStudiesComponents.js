@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 import ConfigData from "../../config";
 import Link from "next/link";
 import { Button } from "flowbite-react";
-
+import Seo from "../../components/SeoComponents/Seo";
+import Header from "@components/Header";
 const CaseStudiesComponents = () => {
   const siteUrl = ConfigData.wpApiUrl;
   const serverUrl = ConfigData.SERVER;
@@ -27,8 +28,18 @@ const CaseStudiesComponents = () => {
     fetchData();
   }, [siteUrl, serverUrl, categoryId]);
 
+  const seoProps = {
+    title: "Developing workplaces with awareness & life skills initiatives ",
+    description:
+      "Learn about creating safe, supportive, and growth-oriented environments for employees through creating awareness and skill-building programmes.",
+    path: "https://upfront.global/insights/impact-stories",
+    metaImage: "/whatWeDo/banner.png",
+  };
+
   return (
     <div>
+      <Header/>
+      <Seo {...seoProps} />
       <div className="lg:bg-[url('/insights/case.png')] bg-[url('/insights/caseMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col pb-8">
         <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">
           IMPACT STORIES

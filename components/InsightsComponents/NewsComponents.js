@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import ConfigData from "../../config";
 import Link from "next/link";
 import { Button } from "flowbite-react";
+import Header from "@components/Header";
+import Seo from "../../components/SeoComponents/Seo"
 
 const NewsComponents = () => {
   const siteUrl = ConfigData.wpApiUrl;
@@ -37,8 +39,18 @@ const NewsComponents = () => {
     fetchData();
   }, [siteUrl, serverUrl, categoryId]);
 
+  const seoProps = {
+    title: "Stories of workforce empowerment & their wellbeing ",
+    description:
+      "Read inspiring stories of workforce empowerment and wellbeing initiatives, showcasing Upfront’s commitment to creating positive change in the workplace.",
+    path: "https://upfront.global/insights/news-and-publications",
+    metaImage: "/whatWeDo/banner.png",
+  };
+
   return (
-    <div>
+    <div>.
+      <Header/>
+      <Seo {...seoProps} />
       <div className="lg:bg-[url('/insights/banner.png')] bg-[url('/insights/bannerMobile.png')] bg-cover lg:h-[300px] h-[600px] flex flex-col  pb-8">
         <h1 className="text-white lg:text-7xl  text-5xl mt-auto lg:ps-16 ps-7">
           NEWS AND <br /> PUBLICATIONS
