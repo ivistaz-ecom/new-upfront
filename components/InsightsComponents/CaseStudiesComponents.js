@@ -45,9 +45,6 @@ const CaseStudiesComponents = () => {
           IMPACT STORIES
         </h1>
       </div>
-      {/* <h2 className="lg:text-6xl text-3xl py-10 lg:px-16">CASE STUDIES</h2> */}
-      {/* <hr className="px-10 pb-10 " /> */}
-      {/* <div className="flex justify-center"> */}
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 container mx-auto">
         {data.length > 0 ? (
           data.map((post) => (
@@ -80,7 +77,7 @@ const CaseStudiesComponents = () => {
                     className="px-7"
                   >
                     <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
-                      Read more
+                      Read More
                     </Button>
                   </Link>
                 </div>
