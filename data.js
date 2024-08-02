@@ -930,71 +930,71 @@ export const HomeBrands = [
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-10.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-10.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-11.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-11.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-12.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-12.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-13.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-13.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-14.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-14.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-15.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-15.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-16.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-16.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-17.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-17.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-18.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-18.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-19.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-19.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-20.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-20.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-21.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-21.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-22.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-22.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-23.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-23.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-24.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-24.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-25.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-25.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-26.pngfooter',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/logos/logo-26.png',
   },
 
 ]
