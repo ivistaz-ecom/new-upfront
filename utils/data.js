@@ -902,31 +902,31 @@ export const OurKeyCommunities = [
 export const HomeBanner = [
   {
     imageUrl:
-      '/homePage/home1.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/Home/home1.jpg',
     headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By Working with the Workforce and Systems',
   },
   {
     imageUrl:
-      '/homePage/home2.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/Home/home2.jpg',
     headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By Changing Mindsets, Behaviours, and Practices',
   },
   {
     imageUrl:
-      '/homePage/home3.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/Home/home3.jpg',
     headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By Improving Skills, Financial Security, Processes, and Policies',
   },
   {
     imageUrl:
-      '/homePage/home4.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/Home/home4.jpg',
     headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By Building Agency, Ensuring Voices and Choices',
   },
   {
     imageUrl:
-      '/homePage/home5.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/Home/home5.jpg',
     headline: 'Making Wellbeing a Reality for the Workforce',
     desc: 'By Establishing Partnerships and Collaborations',
   },
@@ -935,19 +935,19 @@ export const HomeBanner = [
 export const HomeWhoWeAre = [
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/WhoWeAre/whoWe-1.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/Home/whoWe-1.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/WhoWeAre/whoWe-2.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/Home/whoWe-2.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/WhoWeAre/whoWe-3.png',
+      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/Home/whoWe-3.png',
   },
   {
     imageUrl:
-      'https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/WhoWeAre/whoWe-4.png',
+      '/homePage/whoWe-4.png',
   },
 ]
 

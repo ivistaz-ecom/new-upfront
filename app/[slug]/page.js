@@ -56,11 +56,10 @@ const Post = ({ params }) => {
             />
             <title>{post.acf.meta_title_}</title>
             <meta name="description" content={post.acf.meta_description} />
-            {/* <meta name="robots" content="index, follow" /> */}
             <meta http-equiv="content-language" content="en"></meta>
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://upfront.global  " />
-          </head>
+          <link rel="canonical" href={`https://upfront.global/${post.slug}`} />
+          </head> 
 
           <div className="w-full">
             <div className="bg-gradient-to-r from-gray-950 to-[#f40f34] bg-cover h-[80vh] flex flex-col pb-8">

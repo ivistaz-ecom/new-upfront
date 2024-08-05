@@ -21,7 +21,7 @@ export default function WellBeing() {
       </p>
       <div>
         <img
-          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/circle.png"
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/Home/circle.png"
           className="mx-auto py-4 w-[550px]"
         />
       </div>
