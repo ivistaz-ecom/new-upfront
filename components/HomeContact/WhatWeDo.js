@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
+import LazyLoad from 'react-lazy-load';
 
 export default function WellBeing() {
   return (
+    <LazyLoad height={870}>
     <div className="lg:mx-auto lg:px-40 lg:py-7 mt-6 tracking-wide lg:bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/upfron-global/background.svg')] h-auto bg-cover bg-no-repeat">
       <h1 className="lg:text-6xl text-3xl text-center">
         <span className=" ">WHAT <br /></span> WE DO
@@ -41,5 +43,6 @@ export default function WellBeing() {
         </button>
       </div> */}
     </div>
+    </LazyLoad>
   );
 }
