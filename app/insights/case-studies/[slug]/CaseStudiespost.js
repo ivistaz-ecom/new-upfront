@@ -39,14 +39,15 @@ const CaseStudiesPosts = ({ slug }) => {
         <div className="text-center py-20 text-red-500">{error}</div>
       ) : post ? (
         <div key={post.id}>
-          <Head>
+           <React.Fragment key={index}>
+          <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>{post.acf.meta_title_}</title>
             <meta name="description" content={post.acf.meta_description} />
             <meta http-equiv="content-language" content="en"></meta>
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href={`https://upfront.global/insights/case-studies/${post.slug}`} />
-          </Head>
+          </head>
           <div className="bg-customGray h-36">
             <Header />
           </div>
@@ -87,6 +88,7 @@ const CaseStudiesPosts = ({ slug }) => {
               </div>
             </div>
           </div>
+          </React.Fragment>
         </div>
       ) : (
         <div className="text-center py-20">Loading...</div>

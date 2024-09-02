@@ -26,11 +26,13 @@ const CaseStudiesPosts = ({ slug }) => {
   return (
     <div className="custom-container">
       {post ? (
-        post.map((data) => (
+        post.map((data, index) => (
           <div key={data.id}>
+            <React.Fragment key={index}>
             <head>
               <title>{data.acf.meta_title_}</title>
               <meta name="description" content={data.acf.meta_description} />
+              <meta name="robots" content="index, follow" />
               <link
                 rel="canonical"
                 href={`https://upfront.global/insights/impact-stories/${data.slug}`}
@@ -99,6 +101,7 @@ const CaseStudiesPosts = ({ slug }) => {
                 </div>
               </div>
             </div>
+            </React.Fragment>
           </div>
         ))
       ) : (
