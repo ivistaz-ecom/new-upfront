@@ -5,7 +5,7 @@ import Head from "next/head";
 import Header from "@components/Header";
 import Link from "next/link";
 import ConfigData from "../../../../config"; // Adjust the import path according to your project structure
-
+import NextSeo from "@components/SeoComponents/Seo";
 const BlogPosts = ({ slug }) => {
   const siteUrl = ConfigData.wpApiUrl;
   const [post, setPost] = useState(null);
@@ -17,7 +17,7 @@ const BlogPosts = ({ slug }) => {
         const data = await response.json();
         setPost(data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
     fetchData();
@@ -26,15 +26,19 @@ const BlogPosts = ({ slug }) => {
   return (
     <div className="custom-container">
       {post ? (
-        post.map((data) => (
+        post.map((data,index) => (
           <div key={data.id}>
+             <React.Fragment key={index}>
             <head>
               <title>{data.acf.meta_title_}</title>
               <meta name="description" content={data.acf.meta_description} />
+              <meta name="robots" content="index, follow" />
               <link rel="canonical" href={`https://upfront.global/insights/blogs/${data.slug}`} />
+              {/* <NextSeo/> */}
             </head>
             <div className="bg-customGray h-36">
               <Header />
+             
             </div>
             <div className="bg-[#E8E8E8] p-4">
               <p className="text-black">
@@ -69,11 +73,15 @@ const BlogPosts = ({ slug }) => {
                 </div>
               </div>
             </div>
+            </React.Fragment>
           </div>
         ))
+        
       ) : (
         <div className="text-center py-20">Loading...</div>
+        
       )}
+      
     </div>
   );
 };
