@@ -37,12 +37,27 @@ const Page = () => {
               </p>
               <p className="text-xl text-red-500 mt-3">Current Openings</p>
               <p>
-              Position : <a className="underline"
-                  href="/pdf/ToR-%20H4All%20Implementation%20specialist-%20Delhi-NCR.docx.pdf"
+              Position 1: <a className="underline"
+                  href="/pdf/JD _ MarComms Specialist _ Upfront.pdf"
                   target="_blank"
                 >
-                    Implementation Specialist as Network Consultant
-                  (NC)
+                  Marketing & Communication Specialist
+                </a>
+              </p>
+              <p>
+              Position 2: <a className="underline"
+                  href="/pdf/JD- MLE Specialist.docx.pdf"
+                  target="_blank"
+                >
+                  Monitoring, Learning & Evaluation Specialist 
+                </a>
+              </p>
+              <p>
+              Position 3: <a className="underline"
+                  href="/pdf/ToR- H4All Implementation Specialist as Network Consultant (NC) - Delhi-NCR.docx (3).pdf"
+                  target="_blank"
+                >
+                  Implementation Specialist
                 </a>
               </p>
               <ContactForms />

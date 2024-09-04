@@ -18,10 +18,14 @@ const ContactForm = ({ subject }) => {
   const [positions, setPositions] = useState([]);
   const [newPosition, setNewPosition] = useState("");
 
-  const jobType = [{ id: "1", name: "Part Time" },
-    { id: "2", name: "Full Time" }];
+  const jobType = [
+    { id: "1", name: "Part Time" },
+    { id: "2", name: "Full Time" },
+  ];
   const applying = [
-    { id: "1", position: "Implementation Specialist as Network Consultant (NC)" },
+    { id: "1", position: "Marketing & Communication Specialist" },
+    { id: "2", position: "Monitoring, Learning & Evaluation Specialist " },
+    { id: "3", position: "Implementation Specialist" },
   ];
 
   const [formData, setFormData] = useState({
@@ -42,7 +46,12 @@ const ContactForm = ({ subject }) => {
   };
 
   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-  const notAllowedDomains = ["test.com", "sample.com", "example.com", "testing.com"];
+  const notAllowedDomains = [
+    "test.com",
+    "sample.com",
+    "example.com",
+    "testing.com",
+  ];
 
   const customErrors = {
     email: "Please enter a valid email address.",
@@ -95,7 +104,8 @@ const ContactForm = ({ subject }) => {
         setFileErrors(true);
         setHideSubmitButton(true);
         setErrors({
-          resume: "Invalid file type. Allowed types are PDF, DOC, DOCX, RTF, and TXT.",
+          resume:
+            "Invalid file type. Allowed types are PDF, DOC, DOCX, RTF, and TXT.",
         });
       }
     }
@@ -161,7 +171,7 @@ const ContactForm = ({ subject }) => {
   return (
     <div className="bg-[#4A4A4A] py-1 px-5 mt-5 lg:w-1/2 container">
       {formVisible ? (
-        <>  
+        <>
           <p className="text-white mt-3">
             If you would like to explore an opportunity to work with Upfront,
             <br />
@@ -185,7 +195,9 @@ const ContactForm = ({ subject }) => {
                   maxLength={20}
                 />
                 {errors.firstname && (
-                  <div className="invalid-feedback text-red-500">{errors.firstname}</div>
+                  <div className="invalid-feedback text-red-500">
+                    {errors.firstname}
+                  </div>
                 )}
               </div>
               <div className="mb-3 col-span-2">
@@ -200,7 +212,9 @@ const ContactForm = ({ subject }) => {
                   onChange={handleChange}
                 />
                 {errors.contactNo && (
-                  <div className="invalid-feedback text-red-500">{errors.contactNo}</div>
+                  <div className="invalid-feedback text-red-500">
+                    {errors.contactNo}
+                  </div>
                 )}
               </div>
               <div className="mb-3">
@@ -215,7 +229,9 @@ const ContactForm = ({ subject }) => {
                   onChange={handleChange}
                 />
                 {errors.email && (
-                  <div className="invalid-feedback text-red-500">{errors.email}</div>
+                  <div className="invalid-feedback text-red-500">
+                    {errors.email}
+                  </div>
                 )}
               </div>
               <div className="mb-3 col-span-1">
@@ -235,7 +251,9 @@ const ContactForm = ({ subject }) => {
                   ))}
                 </select>
                 {errors.jobType && (
-                  <div className="invalid-feedback text-red-500">{errors.jobType}</div>
+                  <div className="invalid-feedback text-red-500">
+                    {errors.jobType}
+                  </div>
                 )}
               </div>
               <div className="mb-3">
@@ -256,7 +274,9 @@ const ContactForm = ({ subject }) => {
                   ))}
                 </select>
                 {errors.position && (
-                  <div className="invalid-feedback text-red-500">{errors.position}</div>
+                  <div className="invalid-feedback text-red-500">
+                    {errors.position}
+                  </div>
                 )}
               </div>
               <div className="mb-3 col-span-1">
@@ -271,12 +291,17 @@ const ContactForm = ({ subject }) => {
                   aria-describedby="inputGroupFileAddon04"
                   aria-label="Upload"
                 />
-                <p className="text-white" style={{ lineHeight: "16px", fontSize: "12px" }}>
-                  Complete your job application by uploading your resume or CV. Upload
-                  either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.
+                <p
+                  className="text-white"
+                  style={{ lineHeight: "16px", fontSize: "12px" }}
+                >
+                  Complete your job application by uploading your resume or CV.
+                  Upload either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.
                 </p>
                 {errors.resume && (
-                  <div className="invalid-feedback text-red-500">{errors.resume}</div>
+                  <div className="invalid-feedback text-red-500">
+                    {errors.resume}
+                  </div>
                 )}
                 <div className="fs-6" style={{ color: "#b02a37" }}>
                   {errors.resume}
@@ -300,7 +325,9 @@ const ContactForm = ({ subject }) => {
         </>
       ) : (
         <div className="mt-5 text-center mb-5 ">
-          <h3 className="fs-4 text-white">Your application has been received.</h3>
+          <h3 className="fs-4 text-white">
+            Your application has been received.
+          </h3>
           <h3 className="fs-4 text-white">We will contact you shortly.</h3>
         </div>
       )}
