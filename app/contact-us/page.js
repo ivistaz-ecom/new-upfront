@@ -102,14 +102,14 @@ const Page = () => {
 
             <div className="lg:flex text-xl gap-3">
               <div className="lg:px-1 lg:ms-3 pt-5 pb-2 lg:pb-0">Office Address:</div>
-              <Link href="https://www.linkedin.com/showcase/upfrontcg/">
+              {/* <Link href="https://www.linkedin.com/showcase/upfrontcg/"> */}
                 <div className="lg:pt-5 pb-2 ml-0">
                   <h3 className="font-bold">Bengaluru:</h3>
                   <p>#25, 1st Main, AECS Layout, Ashwath Nagar, Bengaluru - 560094</p>
                   <h3 className="font-bold mt-4">Delhi:</h3>
                   <p>A-10, Second Floor, Green Park, New Delhi - 110016</p>
                 </div>
-              </Link>
+              {/* </Link> */}
              
             </div>
             {/* <div className="lg:p-4 pt-7 text-xl lg:flex">
