@@ -1,0 +1,29 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy Staging Upfront
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }} # Your server's IP address
+          username: ${{ secrets.USERNAME }} # Your server's username
+          key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key in PEM format
+          # Optionally, you can include the passphrase here if required
+          # passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase if applicable
+
+          script: |
+            cd /home/react-staging/upfront/
+            git config --global --add safe.directory /home/react-staging/upfront/
+            sudo git pull origin main
+            sudo npm install
+            sudo npm run build
+            sudo pm2 restart 7
