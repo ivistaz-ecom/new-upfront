@@ -18,7 +18,7 @@ export default function Home() {
     "Supporting Workforces Around the World - Wellbeing and Resilience for All with Upfront";
   const description =
     "Upfront is supporting the workforce worldwide to be well and resilient through systemic and inclusive ways. Join us in building enriched lives.";
-  const path = "https://upfront.global/contact-us";
+  const path = "https://upfront.global/";
   const metaImage = "/contactUs/banner.png";
   return (
     <>

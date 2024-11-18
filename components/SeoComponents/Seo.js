@@ -27,7 +27,7 @@ function NextSeo({ title, description, path, metaImage }) {
                     __html: JSON.stringify({
                         "@context": "https://schema.org/",
                         "@type": "WebSite",
-                        "name": "thezurihotels",
+                        "name": "upfront.global",
                         "url": path,
                         "potentialAction": {
                             "@type": "SearchAction",

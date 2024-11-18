@@ -1,8 +1,10 @@
-"use client";
+'use client';
 import { useEffect, useState } from "react";
 import { initFlowbite } from "flowbite";
 import Image from "next/image";
 import Link from "next/link";
+import SearchBar from "./SearchBar/page";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -224,17 +226,19 @@ const Header = () => {
                   </ul>
                 </div>
               </li>
-              <li>
+              <li className="flex items-center gap-4">
                 <Link
                   href="/contact-us"
-                  className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:  dark:hover:bg-gray-700  md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                 >
-                  <button className="px-3 py-2 bg-red-600 text-whitex rounded-none">
+                  <button className="px-3 py-2 bg-red-600 text-white rounded-none">
                     Contact Us
                   </button>
                 </Link>
+                {/* <SearchBar/> */}
               </li>
             </ul>
+           
           </div>
         </div>
       </nav>

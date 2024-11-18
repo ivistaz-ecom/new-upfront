@@ -2,4 +2,4 @@ User-agent: *
 Allow: 
 Disallow: /cgi-bin/
 
-Sitemap: https://upfront.global/sitemap.xml
+Sitemap: https://upfront.glowxbal/sitemap.xml
