@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { initFlowbite } from "flowbite";
 import Image from "next/image";
 import Link from "next/link";
-import SearchBar from "./SearchBar/page";
+import SearchBar from "./SearchBar/SearchBar";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -201,7 +201,7 @@ const Header = () => {
                   >
                     <li>
                       <Link
-                        href="/insights/impact-stories"
+                        href="/impact-stories"
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-md"
                       >
                         Impact Stories
@@ -209,7 +209,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="/insights/blogs"
+                        href="/blogs"
                         className="block text-md px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Stories (Blogs)
@@ -217,7 +217,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        href="/insights/news-and-publications"
+                        href="/news-and-publications"
                         className="block text-md px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         News and Publications
@@ -235,7 +235,7 @@ const Header = () => {
                     Contact Us
                   </button>
                 </Link>
-                {/* <SearchBar/> */}
+                 <SearchBar/>
               </li>
             </ul>
            

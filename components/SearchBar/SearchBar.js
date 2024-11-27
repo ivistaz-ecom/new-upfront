@@ -22,24 +22,32 @@ function SearchModal() {
 
       setLoading(true);
       const startTime = performance.now(); // Start timer
-      const response = await fetch(
-        `https://beta.upfront.global/wp-json/wp/v2/search?search=${searchQuery}`,
-      );
-      const data = await response.json();
-      const endTime = performance.now(); // End timer
-      // console.log("search result", data);
-      setResults(data); // Assuming the response data is an array of results
-      setResultCount(data.length); // Set the count of results
-      setFetchTime((endTime - startTime).toFixed(2)); // Calculate and set fetch time in milliseconds
+
+      try {
+        // Fetch results for all categories
+        const response = await fetch(
+          `https://beta.upfront.global/wp-json/wp/v2/posts?search=${searchQuery}&categories=3,2,5`
+        );
+        const data = await response.json();
+        const endTime = performance.now(); // End timer
+
+        // Update state with results
+        setResults(data);
+        setResultCount(data.length); // Set the count of results
+        setFetchTime((endTime - startTime).toFixed(2)); // Set fetch time in ms
+      } catch (error) {
+        console.error("Error fetching search results:", error);
+      }
+
       setLoading(false);
     };
 
     const debounceTimer = setTimeout(() => {
       fetchResults();
-    }, 300); // Adjust the debounce time as needed
+    }, 300); // Debounce to avoid excessive API calls
 
     return () => clearTimeout(debounceTimer); // Cleanup the timer
-  }, [searchQuery]); // Fetch results when searchQuery changes
+  }, [searchQuery]);
 
   return (
     <div className=" text-black">
@@ -47,7 +55,7 @@ function SearchModal() {
         className="block cursor-pointer text-center text-2xl text-white focus:outline-none focus:ring-0 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         onClick={() => setOpenModal(true)}
       >
-       <FaSearch/>
+        <FaSearch />
       </button>
 
       {/* Modal */}
@@ -83,9 +91,9 @@ function SearchModal() {
             <span className="sr-only">Close modal</span>
           </button>
           {/* Modal content */}
-          <div className="relative rounded-lg bg-gray-200 shadow dark:bg-gray-700">
+          <div className="relative rounded-lg bg-white shadow dark:bg-gray-700">
             {/* Modal header */}
-            <div className="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5">
+            <div className="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5 bg-red-600">
               <input
                 type="text"
                 id="search"
@@ -107,29 +115,44 @@ function SearchModal() {
               ) : (
                 <>
                   {resultCount > 0 && (
-                    <p className="mb-6 mt-2 border-b-0">
+                    <p className="mb-6 border-b-0 text-red-600">
                       Total <span className="font-semibold">{resultCount}</span>{" "}
-                      results in{" "}
-                      <span className="font-semibold">{fetchTime}</span> ms.
+                      results
                     </p>
                   )}
                   {results.length > 0 ? (
                     <ul className="h-[200px] overflow-scroll">
                       {results.map((result, index) => {
-                        // Construct the dynamic URL
-                        const basePath = result.post_type; // Use the post type
-                        const dynamicUrl = `/${basePath}/${result.slug}`; // Build the URL dynamically
+                        let dynamicUrl = "";
+
+                        if (result.categories.includes(5)) {
+                          // For "news-and-publications", use the external URL
+                          dynamicUrl =
+                            result.acf.news_and_publications_url || "#"; // Ensure there's a fallback
+                        } else if (result.categories.includes(3)) {
+                          dynamicUrl = `/blogs/${result.slug}`;
+                        } else if (result.categories.includes(2)) {
+                          dynamicUrl = `/impact-stories/${result.slug}`;
+                        }
 
                         return (
                           <li key={index}>
                             <Link
                               href={dynamicUrl}
-                              className="flex justify-between border-b p-2"
-                              onClick={() => setOpenModal(false)} // Close modal on click
+                              target={
+                                result.categories.includes(5)
+                                  ? "_blank"
+                                  : "_self"
+                              } // Open external links in a new tab
+                              className="flex justify-between border-b p-2 hover:text-red-600"
+                              onClick={() => {
+                                if (!result.categories.includes(5))
+                                  setOpenModal(false);
+                              }}
                             >
                               <span
                                 dangerouslySetInnerHTML={{
-                                  __html: result.title,
+                                  __html: result.title.rendered, // Rendered title for formatting
                                 }}
                               ></span>
                             </Link>

@@ -4,7 +4,8 @@ const config = {
     wpPageUrl: "",
     // Career form
     careeFormApi: "https://beta.upfront.global/wp-json/contact-form-7/v1/contact-forms/102/feedback",
-    "SERVER": "7"
+    "SERVER": "7",
+    websiteUrl : "https://upfront.global/"
 }
 
 export default config;
