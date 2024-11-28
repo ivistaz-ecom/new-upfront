@@ -235,7 +235,10 @@ const Header = () => {
                     Contact Us
                   </button>
                 </Link>
-                 <SearchBar/>
+                
+              </li>
+              <li>
+              <SearchBar className="flex items-center relative z-50"/>
               </li>
             </ul>
            

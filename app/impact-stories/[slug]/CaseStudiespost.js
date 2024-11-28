@@ -43,8 +43,7 @@ const CaseStudiesPosts = ({ slug }) => {
             </div>
             <div className="bg-[#E8E8E8] p-4">
               <p className="text-black">
-                <Link href="/insights">Insights /</Link>
-                <span className="fs-6 mb-0 px-1">Impact Stories /</span>
+                <Link className="fs-6 mb-0 px-1" href="/impact-stories">Impact Stories /</Link>
                 <span
                   dangerouslySetInnerHTML={{ __html: data.title.rendered }}
                 />

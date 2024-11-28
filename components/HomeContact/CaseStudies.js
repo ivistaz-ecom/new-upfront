@@ -51,7 +51,7 @@ const CaseStudy = () => {
                   />
                 )}
                 <div className="px-5 mb-5">
-                  <Link href={`/insights/case-studies/${post.slug}`}>
+                  <Link href={`/impact-stories/${post.slug}`}>
                   <h2
                     className="text-[23px]  leading-tight text-[#080808] h-[99px] hover:text-red-500"
                     dangerouslySetInnerHTML={{
@@ -69,7 +69,7 @@ const CaseStudy = () => {
                     ></div>
 
                     <Link
-                      href={`/insights/impact-stories/${post.slug}`}
+                      href={`/impact-stories/${post.slug}`}
                       className="text-[] text-start border border-[#9a9a9a] p-4 justify-between flex hover:bg-black hover:text-white"
                     >
                       Read More
@@ -83,7 +83,7 @@ const CaseStudy = () => {
       </div>
 
       <div className="lg:px-16 lg:pt-8 pb-6 text-center lg:p-0 p-2">
-        <Link href="/insights/impact-stories">
+        <Link href="/impact-stories">
           <button className="bg-customGray self-center text-white p-3 mt-5">
             View All Stories
           </button>
