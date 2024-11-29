@@ -1,11 +1,38 @@
 "use client";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
 
-function SearchBar() {
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+
+export default function SearchBar() {
+  const [isFocused, setIsFocused] = useState(false);
   const [searchQuery, setSearchQuery] = useState(""); // State to track search input
+  const [searchResults, setSearchResults] = useState([]); // State to store search results
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
+
+  // Fetch results as the user types
+  useEffect(() => {
+    if (!searchQuery.trim()) {
+      setSearchResults([]); // Clear results when input is empty
+      return;
+    }
+
+    const fetchResults = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(
+          `https://beta.upfront.global/wp-json/wp/v2/posts?search=${searchQuery}&categories=3,2,5&_embed`
+        );
+        const data = await response.json();
+        setSearchResults(data);
+      } catch (error) {
+        console.error("Error fetching search results:", error);
+      }
+      setLoading(false);
+    };
+
+    fetchResults();
+  }, [searchQuery]);
 
   const handleSearch = () => {
     if (!searchQuery.trim()) return; // Prevent empty searches
@@ -13,43 +40,104 @@ function SearchBar() {
   };
 
   return (
-    <>
-      <div className="relative flex items-center w-full max-w-sm min-w-[200px] px-3 lg:px-0">
-        <div class="relative">
-          <input
-            type="text"
-            className="w-60 placeholder:text-gray-500  bg-gray-200 text-black text-sm border border-gray-300 rounded-none pl-3 py-2 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-black shadow-sm mr-2"
-            placeholder="Search..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") handleSearch(); // Trigger search on Enter key press
-            }}
-          />
-
-          <button
-            class="absolute top-1  right-3 flex items-center rounded bg-black py-1 px-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-            onClick={handleSearch}
+    <div className="relative flex items-center gap-4 p-2 sm:p-4 pl-52">
+      <div
+        className={`absolute right-0 transition-all ${
+          isFocused ? "w-full sm:w-72 bg-white z-20" : "w-40 sm:w-32 bg-gray-100"
+        } flex items-center rounded-full border ${
+          isFocused ? "border-red-500 shadow-lg" : "border-gray-300"
+        }`}
+      >
+        <input
+          type="text"
+          placeholder={isFocused ? "For example, upfront ↵" : "Search.."}
+          className="w-full py-2 pl-4 pr-10 text-gray-700 outline-none rounded-full transition-all duration-500 text-sm sm:text-base"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") handleSearch(); // Trigger search on Enter key press
+          }}
+          onMouseOver={() => setIsFocused(true)}
+          onMouseLeave={() => setIsFocused(false)}
+        />
+        <div
+          className="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer"
+          onClick={handleSearch}
+          onMouseOver={() => setIsFocused(true)}
+          onMouseLeave={() => setIsFocused(false)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className={`w-5 h-5 transition-all ${
+              isFocused ? "text-red-500" : "text-gray-400"
+            }`}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4 mr-2"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            Search
-          </button>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
         </div>
       </div>
-    </>
+
+      {/* Dropdown for search results */}
+      { searchQuery && !loading && (
+        <div className="absolute bg-white right-0 lg:w-96 w-72 top-16 border border-gray-300 rounded-md mt-1 shadow-lg max-h-60 overflow-y-auto">
+          {searchResults.length > 0 ? (
+            <ul>
+              {searchResults.map((result, index) => {
+                let dynamicUrl = "";
+
+                if (result.categories.includes(5)) {
+                  dynamicUrl = result.acf?.news_and_publications_url || "#";
+                } else if (result.categories.includes(3)) {
+                  dynamicUrl = `/blogs/${result.slug}`;
+                } else if (result.categories.includes(2)) {
+                  dynamicUrl = `/impact-stories/${result.slug}`;
+                }
+
+                return (
+                  <li key={index} className="p-2 hover:bg-gray-100 cursor-pointer">
+                    <a
+                      href={dynamicUrl}
+                      target={result.categories.includes(5) ? "_blank" : "_self"}
+                      className="text-black hover:text-red-600"
+                    >
+                      <span className="flex items-center gap-2">
+                        <img
+                          src={
+                            result.acf?.thumbnail_image?.url ||
+                            "/homePage/upfrontLogo.svg"
+                          }
+                          alt={result.title?.rendered || "Thumbnail"}
+                          className="w-8 h-8 object-cover rounded-md"
+                        />
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: result.title?.rendered || "No Title Available",
+                          }}
+                        ></span>
+                      </span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          ) : (
+            <p className="p-2 text-gray-500">No results found.</p>
+          )}
+        </div>
+      )}
+      {/* {loading && (
+        <div className="absolute left-0 w-full bg-white border border-gray-300 rounded-md mt-1 shadow-lg">
+          <p className="p-2 text-gray-500">Loading...</p>
+        </div>
+      )} */}
+    </div>
   );
 }
-
-export default SearchBar;

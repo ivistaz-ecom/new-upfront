@@ -5,13 +5,14 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Header from "@components/Header";
 import Image from "next/image";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 const SearchResultsPage = () => {
   const searchParams = useSearchParams();
   const query = searchParams.get("query"); // Get the search query from the URL
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  const [searchQuery, setSearchQuery] = useState("");
   useEffect(() => {
     const fetchResults = async () => {
       if (!query) return;
@@ -31,12 +32,24 @@ const SearchResultsPage = () => {
 
     fetchResults();
   }, [query]);
-
+  const handleSearch = () => {
+    if (!searchQuery.trim()) return; // Prevent empty searches
+    router.push(`/search-results?query=${encodeURIComponent(searchQuery)}`);
+  };
+  useEffect(() => {
+    if (query) {
+      setSearchQuery(query);
+    }
+  }, [query]);
+  
   return (
     <>
       <Header />
       <div className="container mx-auto p-6 text-center border bg-[#f4f4f4e7] my-10 shadow-lg">
-        <h1 className="mb-6 text-2xl font-bold">Search Results</h1>
+      <h1 className="mb-6 text-2xl font-bold">
+  Search Results For: {searchQuery ? encodeURIComponent(searchQuery) : "No query provided"}
+</h1>
+
         {loading ? (
           <div className="animate-pulse">
             <div className="mb-2 h-6 rounded bg-gray-300"></div>
@@ -89,7 +102,10 @@ const SearchResultsPage = () => {
             })}
           </ul>
         ) : (
-          <p>No results found.</p>
+          <p>No results found.
+              <p className="flex justify-center gap-1 py-3">Go Back To <Link href="/" className="text-red-600 flex justify-center items-center gap-2 text-xl">HomePage<span><FaArrowCircleRight/></span></Link></p>
+          </p>
+          
         )}
       </div>
     </>

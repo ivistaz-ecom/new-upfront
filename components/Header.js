@@ -68,6 +68,10 @@ const Header = () => {
               priority
             />
           </Link>
+          <span className="block lg:hidden">
+          <SearchBar className="flex items-center relative z-50"/>
+          </span>
+          
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
@@ -226,7 +230,7 @@ const Header = () => {
                   </ul>
                 </div>
               </li>
-              <li className="flex items-center gap-4">
+              <li className="flex items-center gap-4 pr-28">
                 <Link
                   href="/contact-us"
                   className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
@@ -237,7 +241,7 @@ const Header = () => {
                 </Link>
                 
               </li>
-              <li>
+              <li className="hidden sm:block">
               <SearchBar className="flex items-center relative z-50"/>
               </li>
             </ul>
