@@ -8,25 +8,39 @@ export default function SearchBar() {
   const [searchQuery, setSearchQuery] = useState(""); // State to track search input
   const [searchResults, setSearchResults] = useState([]); // State to store search results
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(""); // State to handle errors
   const router = useRouter();
 
   // Fetch results as the user types
   useEffect(() => {
     if (!searchQuery.trim()) {
       setSearchResults([]); // Clear results when input is empty
+      setError(""); // Clear error message when input is empty
       return;
     }
 
     const fetchResults = async () => {
       setLoading(true);
+      setError(""); // Reset error on new search attempt
       try {
         const response = await fetch(
           `https://beta.upfront.global/wp-json/wp/v2/posts?search=${searchQuery}&categories=3,2,5&_embed`
         );
+        
+        if (!response.ok) {
+          throw new Error("Failed to fetch search results");
+        }
+
         const data = await response.json();
-        setSearchResults(data);
+
+        if (data.length === 0) {
+          setError("No results found for your query.");
+        } else {
+          setSearchResults(data);
+        }
       } catch (error) {
         console.error("Error fetching search results:", error);
+        setError("There was an error fetching the results.");
       }
       setLoading(false);
     };
@@ -86,9 +100,11 @@ export default function SearchBar() {
       </div>
 
       {/* Dropdown for search results */}
-      { searchQuery && !loading && (
+      {searchQuery && !loading && (
         <div className="absolute bg-white right-0 lg:w-96 w-72 top-16 border border-gray-300 rounded-md mt-1 shadow-lg max-h-60 overflow-y-auto">
-          {searchResults.length > 0 ? (
+          {error ? (
+            <p className="p-2 text-red-500">{error}</p> // Show error message
+          ) : searchResults.length > 0 ? (
             <ul>
               {searchResults.map((result, index) => {
                 let dynamicUrl = "";
@@ -133,11 +149,6 @@ export default function SearchBar() {
           )}
         </div>
       )}
-      {/* {loading && (
-        <div className="absolute left-0 w-full bg-white border border-gray-300 rounded-md mt-1 shadow-lg">
-          <p className="p-2 text-gray-500">Loading...</p>
-        </div>
-      )} */}
     </div>
   );
 }
