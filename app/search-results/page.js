@@ -87,7 +87,7 @@ const SearchResultsPage = () => {
                           "/homePage/upfrontLogo.svg"
                         }
                         alt={`${result.title?.rendered}` || "Thumbnail"}
-                        className="rounded-md justify-center items-center flex w-full lg:w-32 border shadow-lg"
+                        className="rounded-md justify-center items-center flex w-32 border shadow-lg"
                       />
                       <span
                         className="px-2"
