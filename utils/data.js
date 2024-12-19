@@ -4,21 +4,21 @@ export const homeBannerCarousel = [
   {
     id: 1,
     imageUrl: '/homePage/homeBanner1.png',
-    mobileimage : "/homePage/mobile_banner1.png",
+    mobileimage: "/homePage/mobile_banner1.png",
     title: 'Making Wellbeing a Reality for Workforces',
     description: 'By working with workforces and systems',
   },
   {
     id: 2,
     imageUrl: '/homePage/homeBanner2.png',
-    mobileimage : "/homePage/mobile_banner2.png",
+    mobileimage: "/homePage/mobile_banner2.png",
     title: 'Making Wellbeing a Reality for Workforces',
     description: 'By changing mindsets, behaviours, and practices',
   },
   {
     id: 3,
     imageUrl: '/homePage/homeBanner3.png',
-    mobileimage : "/homePage/mobile_banner3.png",
+    mobileimage: "/homePage/mobile_banner3.png",
     title: 'Making Wellbeing a Reality for Workforces',
     description:
       'By improving skills, financial security, processes and policies',
@@ -26,14 +26,14 @@ export const homeBannerCarousel = [
   {
     id: 4,
     imageUrl: '/homePage/homeBanner4.png',
-    mobileimage : "/homePage/mobile_banner4.png",
+    mobileimage: "/homePage/mobile_banner4.png",
     title: 'Making Wellbeing a Reality for Workforces',
     description: 'By building agency, ensuring voices and choices',
   },
   {
     id: 5,
     imageUrl: '/homePage/homeBanner5.png',
-    mobileimage : "/homePage/mobile_banner5.png",
+    mobileimage: "/homePage/mobile_banner5.png",
     title: 'Making Wellbeing a Reality for Workforces',
     description: 'By establishing partnerships and collaborations',
   },
@@ -89,77 +89,77 @@ export const ourReach = [
   },
 ]
 
-export const  thematicAreas = [
+export const thematicAreas = [
   {
     id: 1,
     logo: '/homePage/thematicAreas/agency.svg',
     title: 'Agency Building',
     width: '60',
-    height:'60'
+    height: '60'
   },
   {
     id: 2,
     logo: '/homePage/thematicAreas/finance.svg',
     title: 'Financial and Digital Inclusion',
     width: '60',
-    height:'60'
+    height: '60'
   },
   {
     id: 3,
     logo: '/homePage/thematicAreas/social.svg',
     title: 'Social Protection',
     width: '60',
-    height:'60'
+    height: '60'
   },
   {
     id: 4,
     logo: '/homePage/thematicAreas/health.svg',
     title: 'Preventive and Promotive Health',
     width: '60',
-    height:'60'
+    height: '60'
   },
   {
     id: 5,
     logo: '/homePage/thematicAreas/climate.svg',
     title: 'Just Transition & Climate Actions',
     width: '60',
-    height:'60'
+    height: '60'
   },
   {
     id: 6,
     logo: '/homePage/thematicAreas/gender.svg',
     title: 'Gender Equality & Equity',
     width: '60',
-    height:'60'
+    height: '60'
   },
   {
     id: 7,
     logo: '/homePage/thematicAreas/accomodation.svg',
     title: 'Safe & Sustainable Accommodation',
     width: '60',
-    height:'60'
+    height: '60'
   },
   {
     id: 8,
     logo: '/homePage/thematicAreas/career.svg',
     title: 'Career Progression for Women',
     width: '60',
-    height:'60'
+    height: '60'
   },
   {
     id: 9,
     logo: '/homePage/thematicAreas/safe.svg',
     title: 'Safe & Sustainable Workplaces',
     width: '60',
-    height:'60'
+    height: '60'
   },
   {
     id: 10,
-    
+
     logo: '/homePage/thematicAreas/workplace.svg',
     title: 'Inclusive Workplaces',
     width: '60',
-    height:'60'
+    height: '60'
   },
 ]
 
@@ -223,9 +223,9 @@ export const coreTeam = [
     id: 3,
     imageUrl: '/coreTeam/sonali.png',
     name: 'Sonali Maheshwari',
-    post: 'Lead, Content and Solutions',
+    post: 'Associate Director - Programs & Partnerships',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/sonalimaheshwari/',
+    url: 'https://www.linkedin.com/in/sonalimaheshwari/',
   },
   {
     id: 4,
@@ -233,7 +233,7 @@ export const coreTeam = [
     name: 'Sathish KN',
     post: 'Programme Manager',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/sathish-kn-515426224/',
+    url: 'https://www.linkedin.com/in/sathish-kn-515426224/',
   },
   // {
   //   id: 5,
@@ -249,7 +249,7 @@ export const coreTeam = [
     name: 'Meeta Sen',
     post: 'Lead, Operations',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/meeta-sen-58750228/'
+    url: 'https://www.linkedin.com/in/meeta-sen-58750228/'
   },
   // {
   //   id: 7,
@@ -265,7 +265,7 @@ export const coreTeam = [
     name: 'Sandhya GS',
     post: 'Implementation Manager',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/sandhya-shivaramaiah-107296119/',
+    url: 'https://www.linkedin.com/in/sandhya-shivaramaiah-107296119/',
   },
   // {
   //   id: 9,
@@ -280,7 +280,7 @@ export const coreTeam = [
     name: 'Tanya Singh',
     post: 'Monitoring Learning and Communication Specialist',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/tanya-singh-a394b422b/',
+    url: 'https://www.linkedin.com/in/tanya-singh-a394b422b/',
   },
   {
     id: 11,
@@ -288,7 +288,7 @@ export const coreTeam = [
     name: 'Abhinav Kumar',
     post: 'Assistant Programme Manager',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/abhinav16111995/',
+    url: 'https://www.linkedin.com/in/abhinav16111995/',
   },
   {
     id: 12,
@@ -296,7 +296,7 @@ export const coreTeam = [
     name: 'Sunitha Bai',
     post: 'Technical Specialist',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/sunitha-bai-71811a263/',
+    url: 'https://www.linkedin.com/in/sunitha-bai-71811a263/',
   },
   // {
   //   id: 13,
@@ -352,7 +352,7 @@ export const coreTeam = [
     name: 'Prabhakaran V',
     post: 'Programme Specialist ',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/prabhakaran-v-he-him-70787375/',
+    url: 'https://www.linkedin.com/in/prabhakaran-v-he-him-70787375/',
   },
   {
     id: 20,
@@ -360,7 +360,7 @@ export const coreTeam = [
     name: 'Retu Singh',
     post: 'Consultant',
     logo: <FaLinkedin />,
-    url:'',
+    url: '',
   },
   // {
   //   id: 21,
@@ -383,7 +383,7 @@ export const coreTeam = [
     name: 'Astha Bohra',
     post: ' Human Resource Manager',
     logo: <FaLinkedin />,
-    url :'https://www.linkedin.com/in/astha-bohra-8a989428/',
+    url: 'https://www.linkedin.com/in/astha-bohra-8a989428/',
   },
 ]
 
@@ -394,7 +394,7 @@ export const ourAdvisors = [
     name: 'Shiv Kumar',
     post: 'Co-Founder, Director',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/shiv-kumar-a288141/',
+    url: 'https://www.linkedin.com/in/shiv-kumar-a288141/',
   },
   {
     id: 2,
@@ -402,7 +402,7 @@ export const ourAdvisors = [
     name: 'Raghunathan N',
     post: 'Co-Founder, Director',
     logo: <FaLinkedin />,
-    url:'https://www.linkedin.com/in/raghunathan-narayanan-495b587/',
+    url: 'https://www.linkedin.com/in/raghunathan-narayanan-495b587/',
   },
   // {
   //   id: 3,
@@ -472,8 +472,8 @@ export const whatWeDoTabs = [
     tab: 'Our Communities',
   },
   {
-    id :5,
-    tab : 'Thematic Areas',
+    id: 5,
+    tab: 'Thematic Areas',
   },
   // {
   //   id: 6,
@@ -519,10 +519,10 @@ export const insightsTabs = [
 //     id: 4,
 //     tab: 'News and Publications',
 //   },
-  // {
-  //   id: 5,
-  //   tab: 'Social Media',
-  // },
+// {
+//   id: 5,
+//   tab: 'Social Media',
+// },
 //   {
 //     id: 5,
 //     tab: 'All',
@@ -843,60 +843,60 @@ export const impact = [
 
 
 export const OurKeyCommunities = [
-    {
-      id: 1,
-      imageurl : "/whatWeDo/streets.png",
-      title :"Street Vendors",
-      
-    },
-    {
-      id: 2,
-      imageurl: "/whatWeDo/factoryWorkers.png",
-      title :"Factory Workforce",
-      
-    },
-    {
-      id: 3,
-      imageurl: "/whatWeDo/frontlineHealthWorkers.png",
-      title :"Frontline Health Workforce",
-    
-    },
-    {
-      id: 4,
-      imageurl : "/whatWeDo/zomato.png",
-      title :"Gig Workforce",
-      
-    },
-    {
-      id: 5,
-      imageurl: "/whatWeDo/img-2.png",
-      title :"Fish Vendors",
-      
-    },
-    {
-      id: 6,
-      imageurl: "/whatWeDo/img-4.png",
-      title :"Sanitation Workforce",
-    
-    },
-    {
-      id: 7,
-      imageurl : "/whatWeDo/farm.png",
-      title :"Plantation Workforce",
-      
-    },
-    {
-      id: 8,
-      imageurl: "/whatWeDo/img-1.png",
-      title :"Construction Workforce",
-      
-    },
-    {
-      id: 9,
-      imageurl: "/whatWeDo/img-3.png",
-      title :"Farmers",
-    
-    },
+  {
+    id: 1,
+    imageurl: "/whatWeDo/streets.png",
+    title: "Street Vendors",
+
+  },
+  {
+    id: 2,
+    imageurl: "/whatWeDo/factoryWorkers.png",
+    title: "Factory Workforce",
+
+  },
+  {
+    id: 3,
+    imageurl: "/whatWeDo/frontlineHealthWorkers.png",
+    title: "Frontline Health Workforce",
+
+  },
+  {
+    id: 4,
+    imageurl: "/whatWeDo/zomato.png",
+    title: "Gig Workforce",
+
+  },
+  {
+    id: 5,
+    imageurl: "/whatWeDo/img-2.png",
+    title: "Fish Vendors",
+
+  },
+  {
+    id: 6,
+    imageurl: "/whatWeDo/img-4.png",
+    title: "Sanitation Workforce",
+
+  },
+  {
+    id: 7,
+    imageurl: "/whatWeDo/farm.png",
+    title: "Plantation Workforce",
+
+  },
+  {
+    id: 8,
+    imageurl: "/whatWeDo/img-1.png",
+    title: "Construction Workforce",
+
+  },
+  {
+    id: 9,
+    imageurl: "/whatWeDo/img-3.png",
+    title: "Farmers",
+
+  },
 ]
 
 export const HomeBanner = [
@@ -955,8 +955,8 @@ export const HomeCount = [
   { count: '582405', title: 'Factory <br> Workforce', border: '' },
   { count: '1687', title: 'Frontline Health <br>Workforce', border: '' },
   { count: '40830', title: 'Street Vendor <br> Workforce', border: '' },
-  { count: '65032', title: 'Women  <br> Workforce',month : "*Reach from Jan '23 - July '24", border: '' },
-  
+  { count: '65032', title: 'Women  <br> Workforce', month: "*Reach from Jan '23 - July '24", border: '' },
+
 ]
 
 export const HomeBrands = [
